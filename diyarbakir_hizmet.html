@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HİZMET - Diyarbakır Büyükşehir Belediyesi</title>
+  <link
+    rel="icon"
+    type="image/png"
+    href="http://cbs.diyarbakir.bel.tr/Keos/img/kurum_logo.png"
+  />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div>
+        <div class="d-flex sideMenu align-items-center flex-direction: column" id="sidebar">
+            <div id="sidebarButtons">
+                    <a><i class="bi-layers"></i></a>
+                    <a><i class="bi-funnel"></i></a>
+                    <a><i class="bi-search"></i></a>
+            </div>
+            <div id="sidebarNames" class="col">
+                <a>Hizmet Tipleri</a>
+                <a>Filtrele</a>
+                <a>Arama</a>
+            </div>
+            <div id="layerIcons" class="col invisible">
+                <a><img src="./data/icons/park_bahce.png"></a>
+                <a><img src="./data/icons/fen_isleri.png"></a>
+                <a><img src="./data/icons/egitim.png"></a>
+                <a><img src="./data/icons/etut_proje.png"></a>
+                <a><img src="./data/icons/sosyal.png"></a>
+                <a><img src="./data/icons/kulturel.png"></a>
+              
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1">
+    <div class="modal-lg modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Açıklama</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="serviceImage">
+          <div id="serviceDetails"></div>
+          <p id="description"></p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extra-info" style="display: none; visibility: hidden;"></div>
+  <script>
+    mapboxgl.accessToken =
+    "pk.eyJ1IjoiZWVhdHNicyIsImEiOiJja3J4a3Y2eHYwcmloMndwc2Jrc3A4a3ZxIn0.RM4JTVb8GfE4ExJ6CAaFhQ";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/eeatsbs/cks0fywrr29ii18nnwro0fbvb",
+      zoom: 8,
+      center: [40, 38],
+    });
+  </script>
+  <script src="app.js"></script>
+  <script src="boundaries.js"></script>
+  <script src="half_finished.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+html {
+  font-size:80%;
+}
+/* Mapbox Canvas */
+#map {
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+/* Sidebar column */
+.sideMenu {
+  height: 100%;
+  width: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.5s;
+  z-index: 1;
+  white-space: nowrap;
+  overflow-x: hidden;
+  color: #dddddd;
+}
+
+
+.sideMenu a {
+  text-decoration: none;
+  display: block;
+}
+
+.sideMenu #sidebarButtons {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#sidebarButtons i {
+  font-size: 3rem;
+}
+
+#sidebarNames {
+  width: 9rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#sidebarNames a {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Sidebar Button Content */
+.invisible {
+  display: none;
+}
+
+#layerIcons {
+  width: 9rem;
+}
+#layerIcons img {
+  margin: 1rem 0rem 1rem 2rem;
+  max-width: 50%;
+  height: auto;
+  border-radius: 100%;
+  border: solid oldlace;
+  border-width: thin;
+}
+
+
+
+map .sidebar{
+  position: absolute;
+  top: 0;
+  margin-left: 1rem;
+}
+/* Modal */
+#serviceImage {
+  max-width: 100%;
+}
+#serviceDetails{
+  float: right;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background-color: wheat;
+  opacity: 70%;
+  border-radius: 10px;
+  font-size: medium;
+}
+#serviceDetails p {
+  opacity: 100%;
+  margin: 0;
+  padding: 0px 5px 0px 5px;
+  color: black;
+}
+
+
+/* document.querySelector("html").style.fontSize */

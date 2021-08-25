@@ -6,7 +6,6 @@ html {
   height: 100vh;
   top: 0;
   bottom: 0;
-  transition: 0.5s;
 }
 
 /* Sidebar column */
@@ -60,13 +59,38 @@ html {
 #layerIcons {
   width: 9rem;
 }
+#sideFilter {
+  width: 18rem;
+}
+
+#sideSearch {
+  width: 21rem;
+}
+#sideSearch ul {
+  padding-left: 0;
+
+}
+#sideSearch li {
+  word-wrap: break-word;
+  white-space: normal;
+  /* border: solid 1px red; */
+  border-radius: 10px;
+  background: rgb(65, 65, 65);
+  margin: 5px;
+  padding: 3px;
+  list-style-type: none;
+
+
+}
+
 #layerIcons img {
   margin: 1rem 0rem 1rem 2rem;
-  max-width: 50%;
+  max-width: 4rem;
   height: auto;
   border-radius: 100%;
   border: solid oldlace;
   border-width: thin;
+  transition: none;
 }
 
 

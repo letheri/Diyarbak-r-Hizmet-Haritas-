@@ -1,3 +1,5 @@
+const sessionID = "45f0dab6453a45e480bdac7431884030";
+////
 const bordersLink = borderName => `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=${borderName}&sessionid=${sessionID}`
 const ilceSınır = $.getJSON(bordersLink("geoilceler.ilceler_hizmet"));
 const ilSınır = $.getJSON(bordersLink("geoiller.Geoiller_Hizmet"));

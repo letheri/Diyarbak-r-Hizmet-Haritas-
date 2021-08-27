@@ -1,81 +1,3 @@
-// Katman isimleri
-const sources = [
-  "park_bahce",
-  "fen_isleri",
-  "egitim",
-  "etut_proje",
-  "sosyal",
-  "kulturel",
-];
-const allServicesPath = `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?QueryName=geoproje_sinirlari.${"Tum_Hizmetler_Harita"}&sessionid=${sessionID}`;
-const allServices = $.getJSON(allServicesPath);
-
-const added_layers = [];
-// Harita üzeri hizmet katmanları, nokta formatında
-map.on("load", async function () {
-  for (const source of sources) {
-    await icon_loader(source); // resim yüklerken async fonksiyon kullanılıyor
-    added_layers.push("layer_" + source); // layers named after their source
-  }
-});
-
-function icon_loader(layer) {
-  map.loadImage(`./data/icons/${layer}.png`, (error, image) => {
-    if (error) throw error;
-    map.addImage(`${layer}_icon`, image);
-    map.addSource(layer, {
-      type: "geojson",
-      data: `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?QueryName=geoproje_sinirlari.${netigmaGeoJson[layer]}&sessionid=${sessionID}`,
-      // data: `./data/${layer}.geojson`,
-    });
-    // map.addLayer({
-    //   id: "circle2_layer_" + layer,
-    //   type: "circle",
-    //   source: layer,
-    //   minzoom: 9,
-    //   layout: {
-    //     "visibility": "visible",
-    //   },
-    //   paint: {
-    //     "circle-radius": 26,
-    //     // "circle-color": "rgba(255, 0, 0, 255)"
-    //     "circle-opacity": 0,
-    //     "circle-stroke-width": 2,
-    //     "circle-stroke-color": "black",
-    //   }
-    // });
-    map.addLayer({
-      id: "layer_" + layer,
-      type: "symbol",
-      source: layer,
-      minzoom: 9,
-      layout: {
-        "icon-image": `${layer}_icon`,
-        "icon-size": 0.2,
-        "visibility": "visible",
-      },
-      // paint: {
-      //   "icon-halo-blur": 5,
-      //   "icon-halo-color": "rgba(255, 0, 0, 255)",
-      //   "icon-halo-width": 50
-      // }
-    });
-    
-    map.addLayer({
-      id: "circle_layer_" + layer,
-      type: "circle",
-      source: layer,
-      maxzoom: 9,
-      layout: {
-        "visibility": "visible",
-      },
-      paint: {
-        "circle-radius": 10,
-        "circle-color": "rgba(255, 0, 0, 255)"
-      }
-    });
-  });
-}
 
 // Sidebar hover events
 const sidebar = document.getElementById("sidebar");
@@ -226,10 +148,11 @@ function iconClickHandler(iconElement, e) {
   }
 }
 
+
 // Sidebar Search screen
 const sideSearchBtn = document.getElementById("sideSearchBtn");
 sideSearchBtn.addEventListener("click", () => {
-  allServices.done(function (data, status) {
+  ALL_SERVICES.done(function (data, status) {
     const searchField = document.getElementById("form1").value;
     console.log(searchField);
     document.querySelector("ul").innerHTML = "";
@@ -246,11 +169,13 @@ sideSearchBtn.addEventListener("click", () => {
     const resultsList = document.querySelectorAll("li");
     if (resultsList) {
       for (const result of resultsList) {
+        console.log(result)
         result.addEventListener("click", (e) => {
           map.flyTo({
             center: matchedPointData[result.id],
-            essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+            essential: true, // this animation is considered essential - prefers-reduced-motion
           });
+          // pulse_search_result(result.)
         });
       }
     }
@@ -260,28 +185,31 @@ sideSearchBtn.addEventListener("click", () => {
 // info screen opens when a point is clicked
 const infoModal = document.getElementById("infoModal");
 var myModal = new bootstrap.Modal(infoModal); // bootstrap modal
-// Event listener for clicked service point
-map.on("click", (e) => {
+const serviceLayers = []
+for (const source of sources) {
+  serviceLayers.push("layer_"+source)
+  serviceLayers.push("layerC_"+source)
+}
+
+map.on("click", (e) => {  // Event listener for clicked service point
   if (buttonClicked) {
     // check if the sidebar is expanded
     buttonClicked = false;
     toggleSidebarHandler();
   }
-  document.querySelector("#serviceDetails").innerHTML = ""; // clear project details section
+  document.querySelector("#serviceDetails").innerHTML = ""; // clear project details section on opened modal
   const features = map.queryRenderedFeatures(e.point, {
-    // query visible points to find details about them
-    layers: added_layers,
+    // query visible points to find details about them - returns array of features
+    layers: serviceLayers,
   });
   if (!features.length) {
     return;
   }
-  const feature = features[0];
+
   // random image for info modal
-  infoModal.querySelector(
-    "#serviceImage"
-  ).src = `https://picsum.photos/id/${Math.floor(
-    Math.random() * 100
-  )}/1920/1080`;
+  infoModal.querySelector("#serviceImage").src =`https://picsum.photos/id/${Math.floor(Math.random()*100)}/1920/1080`;
+
+  const feature = features[0];  
   const pointID = feature.properties.Poly;
   const reportName = netigmaReportNames[feature.source];
   // Netigma report gotten with parameters that are coming from clicked points features
@@ -296,8 +224,7 @@ map.on("click", (e) => {
       const reportDetails = document.querySelector(".icerik").children;
 
       document.querySelector("#modalLabel").innerHTML = serviceName; // writing service name to modal
-      document.querySelector("#serviceDescription").textContent =
-        reportDetails[reportDetails.length - 2].textContent;
+      document.querySelector("#serviceDescription").textContent = reportDetails[reportDetails.length - 2].textContent;
 
       // writing service details to modal's detail subdivision
       for (let i = 0; i < reportDetails.length; i++) {
@@ -305,7 +232,7 @@ map.on("click", (e) => {
           const text = reportDetails[i].textContent.replace(
             "Projeye Başlama Ve Bitiş Tarihi",
             "Proje Tarihleri"
-          ); // too long
+          ); // shortens the text
           document.querySelector(
             "#serviceDetails"
           ).innerHTML += `<p> ${text} </p>`;
@@ -318,7 +245,7 @@ map.on("click", (e) => {
       }
     })
     .fail(() => {
-      console.log(":(");
+      console.log("Hizmet Detay Raporu yüklenemedi!");
     });
   myModal.toggle(); // show the modal
 });
@@ -327,28 +254,26 @@ const darkMode = document.getElementById("darkModeSwitch")
 const header = document.getElementById("header")
 let style = "light"
 darkMode.addEventListener("click", ()=>{
-  if (style === "light" || style === "dark" ) {
-    style="dark"
-    map.setStyle("mapbox://styles/eeatsbs/cks0fywrr29ii18nnwro0fbvb") // dark background
+  // if (style === "light" ) {
+  //   style="dark"
+  //   map.setStyle("mapbox://styles/eeatsbs/cks0fywrr29ii18nnwro0fbvb") // dark background
 
-  } else if (style==="dark") {
-    style="light"
-    map.setStyle("mapbox://styles/eeatsbs/ckst049v10vtg17mqhf4vc0ve") // white background
+  // } else if (style==="dark") {
+  //   style="light"
+  //   map.setStyle("mapbox://styles/eeatsbs/ckst049v10vtg17mqhf4vc0ve") // white background
 
-  } else {
-    map.setStyle("mapbox://styles/eeatsbs/ckssv8pk30c4618qmjdeuq83b") // satellite background
+  // } else {
+  //   map.setStyle("mapbox://styles/eeatsbs/ckssv8pk30c4618qmjdeuq83b") // satellite background
     
-  }
-  header.classList.toggle("bg-secondary")
+  // }
+  header.classList.toggle("bg-light")
   header.classList.toggle("bg-dark")
   header.classList.toggle("text-light")
   header.classList.toggle("text-dark")
+  sidebar.classList.toggle("text-dark")
   sidebar.classList.toggle("bg-dark")
-  sidebar.classList.toggle("bg-secondary")
+  sidebar.classList.toggle("bg-light")
   // sidebar.classList.toggle("text-dark")
-
- 
   
-
-
 })
+

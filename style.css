@@ -1,23 +1,39 @@
 html {
   font-size:80%;
 }
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 #header {
   /* margin-right: 0; */
-  margin-left: 4rem;
-  height: auto;
+  /* margin-left: 4rem; */
+  height: 5vh;
   width: auto;
   transition: 0.5s;
 }
+
+#header header {
+  height: inherit;
+}
 #header p {
   font-size: 2rem;
+  height: inherit;
+  text-align: center;
 }
 
 /* Mapbox Canvas */
-#map {
-  height: 100vh;
+.map_box_container{
+  margin-left: 4rem;
+  height: 95vh;
+}
+
+#map{
+  height: 100%;
   /* padding-top: 5rem; */
   bottom: 0;
+  top: 0;
 }
 
 /* Sidebar column */
@@ -25,7 +41,7 @@ html {
   height: 100%;
   width: 4rem;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   left: 0;
   /* background-color: #111; */
   transition: 0.5s;

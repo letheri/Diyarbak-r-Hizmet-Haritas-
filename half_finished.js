@@ -19,16 +19,12 @@ const netigmaGeoJson = {
 };
 
 const size = 200;
-
 // This implements `StyleImageInterface`
 // to draw a pulsing dot icon on the map.
 const pulsingDot = {
   width: size,
   height: size,
   data: new Uint8Array(size * size * 4),
-
-  // When the layer is added to the map,
-  // get the rendering context for the map canvas.
   onAdd: function () {
     const canvas = document.createElement("canvas");
     canvas.width = this.width;
@@ -52,15 +48,6 @@ const pulsingDot = {
     context.fillStyle = `rgba(255, 200, 200, ${1 - t})`;
     context.fill();
 
-    // Draw the inner circle.
-    context.beginPath();
-    context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
-    context.fillStyle = "rgba(255, 100, 100, 1)";
-    context.strokeStyle = "white";
-    context.lineWidth = 2 + 4 * (1 - t);
-    context.fill();
-    context.stroke();
-
     // Update this image's data with data from the canvas.
     this.data = context.getImageData(0, 0, this.width, this.height).data;
 
@@ -72,10 +59,12 @@ const pulsingDot = {
     return true;
   },
 };
+map.addImage("pulsing-dot", pulsingDot, { pixelRatio: 2 });
 function pulse_search_result(coordinates) {
-
-  map.addImage("pulsing-dot", pulsingDot, { pixelRatio: 2 });
-
+  if (map.getSource("dot-point")) {
+    map.removeLayer("layer-with-pulsing-dot");
+    map.removeSource("dot-point");
+  }
   map.addSource("dot-point", {
     type: "geojson",
     data: {
@@ -98,35 +87,5 @@ function pulse_search_result(coordinates) {
     'layout': {
     'icon-image': 'pulsing-dot'
     }
-    });
-
+  });
 }
-// point groups have 'layer_' added their name while decleration
-// this creates an array
-// sources.forEach((ele) => {
-//   el = added_layers.push("layer_" + ele);
-//   map.on("load", el, (e) => {
-//     console.log(e);
-//   });
-// });
-
-// const popups = {}
-// map.on("moveend", () => {
-//   for (i in popups) {popups[i].remove();console.log("ö")}    // delete old popups
-//   c = 0
-//   const features = map.queryRenderedFeatures({ layers: added_layers });
-//   console.log(features);
-//   features.forEach((feature) => {
-//     if (!feature.id) {feature.id=c}
-//     console.log(feature);
-//     popups[c] = new mapboxgl.Popup({
-//       closeButton: false,
-//       closeOnClick: false,
-//     })
-//       .setLngLat(feature.geometry.coordinates)
-//       .setHTML(`<div id=${feature.id}><img src="https://picsum.photos/id/${Math.floor(feature.id*3.415)}/120/90">${feature.id}
-//       </div>`)
-//       .addTo(map);
-//     c++
-//   });
-// })

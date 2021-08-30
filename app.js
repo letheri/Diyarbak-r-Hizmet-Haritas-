@@ -1,3 +1,12 @@
+// Loading screen
+let initialized = false
+map.on("idle",()=>{
+  if (initialized==false) {
+    const loadScreen = document.getElementById("loadingScreen")
+    loadScreen.remove()
+    initialized = true;
+  }
+})
 
 // Sidebar hover events
 const sidebar = document.getElementById("sidebar");
@@ -21,24 +30,24 @@ function toggleSidebarHandler() {
   let dontCloseTheNames = "";
   if (!buttonClicked) {
     if (mini) {
-      console.log("opening sidebar");
       document.getElementById("sidebar").style.width = "12em";
       this.mini = false;
       dontCloseTheNames = "sidebarNames";
+
     } else {
-      console.log("closing sidebar");
       document.getElementById("sidebar").style.width = "4em";
       this.mini = true;
     }
     sidebarLayerInvisibility(dontCloseTheNames);
   }
 }
+
 // all sidebar div IDs as an array
 const sidebarContentDivIDs = [];
 for (i of sidebar.children) {
   sidebarContentDivIDs.push(i.id);
 }
-sidebarContentDivIDs.shift(); // Deletes the first element in sidebar element IDs which is div that holds sidebar buttons
+sidebarContentDivIDs.shift(); // Deletes the first element's ID which is sidebar buttons
 function sidebarLayerInvisibility(clickedLayer) {
   for (const i of sidebarContentDivIDs) {
     const element = document.getElementById(i);
@@ -80,7 +89,7 @@ const searchHandler = function () {
   clickedButtonID = 3;
 };
 const sidebarBtns = document.getElementById("sidebarButtons").children;
-const sidebarNameElements = document.getElementById("sidebarNames").children;
+const sidebarNameElements = sidebarNames.children;
 for (const i of sidebarBtns) {
   const classOfBtn = i.querySelector("i").className;
   if (classOfBtn.includes("layer")) {
@@ -95,9 +104,9 @@ for (const i of sidebarBtns) {
   }
 }
 
-// Layer Switch functionality for icons
+// Sidebar Layer Switch
 map.on("load", () => {
-  const sidebarLayerIcons = document.getElementById("layerIcons").children;
+  const sidebarLayerIcons = document.getElementById("layerIcons").querySelectorAll("a");
   for (const i of sidebarLayerIcons) {
     if (i.children[0].src.includes("park")) {
       i.addEventListener("click", (e) => {
@@ -126,6 +135,7 @@ map.on("load", () => {
     }
   }
 });
+// Icon visiblity function
 function iconClickHandler(iconElement, e) {
   e.preventDefault();
   e.stopPropagation();
@@ -135,52 +145,87 @@ function iconClickHandler(iconElement, e) {
 
   var visibility = map.getLayoutProperty(iconLayerName, "visibility");
   var visibility = map.getLayoutProperty(iconLayerNameF, "visibility");
-  // var visibility = map.getLayoutProperty(iconLayerNameS, "visibility");
-  console.log(visibility);
+
   if (visibility === "visible") {
     map.setLayoutProperty(iconLayerName, "visibility", "none");
     map.setLayoutProperty(iconLayerNameF, "visibility", "none");
-    // map.setLayoutProperty(iconLayerNameS, "visibility", "none");
+
   } else if (visibility === "none") {
     map.setLayoutProperty(iconLayerName, "visibility", "visible");
     map.setLayoutProperty(iconLayerNameF, "visibility", "visible");
-    // map.setLayoutProperty(iconLayerNameS, "visibility", "visible");
+
   }
 }
 
 
 // Sidebar Search screen
+const sideSearch = document.getElementById("sideSearch");
 const sideSearchBtn = document.getElementById("sideSearchBtn");
 sideSearchBtn.addEventListener("click", () => {
-  ALL_SERVICES.done(function (data, status) {
-    const searchField = document.getElementById("form1").value;
-    console.log(searchField);
-    document.querySelector("ul").innerHTML = "";
-    const matchedPointData = {};
-    for (const i of data.features) {
-      const projName = i.properties["Proje Adı"];
-      if (projName.toUpperCase().includes(searchField.toUpperCase())) {
-        document.querySelector(
-          "ul"
-        ).innerHTML += `<li id="${i.properties["Objectid"]}">${projName}</li>`;
-        matchedPointData[i.properties["Objectid"]] = i.geometry.coordinates;
-      }
+  const searchField = document.getElementById("srvSearch").value;
+  document.querySelector("ul").innerHTML = "";
+  for (const i in ALL_SERVICES.services) {
+    if (i.toUpperCase().includes(searchField.toUpperCase())) {
+      sideSearch.querySelector("ul").innerHTML += 
+        `<li>${i}</li>`;
     }
-    const resultsList = document.querySelectorAll("li");
-    if (resultsList) {
-      for (const result of resultsList) {
-        console.log(result)
-        result.addEventListener("click", (e) => {
-          map.flyTo({
-            center: matchedPointData[result.id],
-            essential: true, // this animation is considered essential - prefers-reduced-motion
-          });
-          // pulse_search_result(result.)
+  }
+  const resultsList = sideSearch.querySelectorAll("li");
+  if (resultsList.length > 0) {
+    for (const result of resultsList) {
+      result.addEventListener("click", (e) => {
+        map.flyTo({
+          center: ALL_SERVICES.services[result.textContent],
+          essential: true, // this animation is considered essential - prefers-reduced-motion
+          zoom: 14,
         });
-      }
+        pulse_search_result(ALL_SERVICES.services[result.textContent])
+      });
     }
-  });
+  } else {
+    const resultsList = sideSearch.querySelector("ul");
+    resultsList.innerHTML = "<li style='background:none;font-weight:bold'>Eşleşen herhangi bir hizmet bulunmamaktadır!</li>"
+  }
 });
+
+// Sidebar Filter screen
+map.on("load",()=>{
+  const filterProvinces = document.getElementById("accordionProvinces");
+  let c = 0;
+  for (const i in ALL_SERVICES.subdivisions) {
+    let listHtml = ""
+    ALL_SERVICES.subdivisions[i].forEach(element => {
+      listHtml += `<li style="color:black">${element}</li>`
+    });
+    filterProvinces.innerHTML += 
+      `<div class="accordion-item">
+        <h4 class="accordion-header" id="heading${c}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${c}" aria-expanded="false" aria-controls="collapse${c}">
+            ${i}
+          </button>
+        </h4>
+        <div id="collapse${c}" class="accordion-collapse collapse" aria-labelledby="heading${c}" data-bs-parent="#accordionProvinces" style="">
+          <div class="accordion-body"><ul>
+            ${listHtml}
+          </ul></div>
+        </div>
+    </div>`;
+    c++
+  }
+  for (const prov of filterProvinces.children) {
+    const provServices = prov.querySelectorAll("li")
+    for (const service of provServices) {
+      service.addEventListener("click", (e) => {
+        map.flyTo({
+          center: ALL_SERVICES.services[service.textContent],
+          essential: true, // this animation is considered essential - prefers-reduced-motion
+          zoom: 14,
+        });
+        pulse_search_result(ALL_SERVICES.services[service.textContent])
+      });
+    }
+  }
+})
 
 // info screen opens when a point is clicked
 const infoModal = document.getElementById("infoModal");
@@ -212,68 +257,55 @@ map.on("click", (e) => {  // Event listener for clicked service point
   const feature = features[0];  
   const pointID = feature.properties.Poly;
   const reportName = netigmaReportNames[feature.source];
+
+  // Netigma report fails to load, service details can not load
+  ///////////////////////////////////////////////////////////////////////////////////////////
   // Netigma report gotten with parameters that are coming from clicked points features
   // returns HTML code
-  link = `${gApiLink}/report/get?reportName=geoproje_sinirlari.${reportName}&sessionid=e5be987ac4794c968c4dce869168f4b0&filter=objectid=${pointID}&key=${pointID}`;
-  $.get(link)
-    .done((data) => {
-      const extraInfo = document.querySelector(".extra-info"); // HTML netigma code put into invisible div
-      extraInfo.innerHTML = data["Content"];
-      document.querySelector(".hizmet-report-close").innerHTML = ""; // gives error for not loading a close image
-      const serviceName = document.querySelector(".baslik").textContent; // more queries from invisible div
-      const reportDetails = document.querySelector(".icerik").children;
+  // link = `${gApiLink}/report/get?reportName=geoproje_sinirlari.${reportName}&sessionid=e5be987ac4794c968c4dce869168f4b0&filter=objectid=${pointID}&key=${pointID}`;
+  // $.get(link)
+  //   .done((data) => {
+  //     const extraInfo = document.querySelector(".extra-info"); // HTML netigma code put into invisible div
+  //     extraInfo.innerHTML = data["Content"];
+  //     document.querySelector(".hizmet-report-close").innerHTML = ""; // gives error for not loading a close image
+  //     const serviceName = document.querySelector(".baslik").textContent; // more queries from invisible div
+  //     const reportDetails = document.querySelector(".icerik").children;
 
-      document.querySelector("#modalLabel").innerHTML = serviceName; // writing service name to modal
-      document.querySelector("#serviceDescription").textContent = reportDetails[reportDetails.length - 2].textContent;
+  //     document.querySelector("#modalLabel").innerHTML = serviceName; // writing service name to modal
+  //     document.querySelector("#serviceDescription").textContent = reportDetails[reportDetails.length - 2].textContent;
 
-      // writing service details to modal's detail subdivision
-      for (let i = 0; i < reportDetails.length; i++) {
-        if (i == 3) {
-          const text = reportDetails[i].textContent.replace(
-            "Projeye Başlama Ve Bitiş Tarihi",
-            "Proje Tarihleri"
-          ); // shortens the text
-          document.querySelector(
-            "#serviceDetails"
-          ).innerHTML += `<p> ${text} </p>`;
-        } else if (i != 4) {
-          // 4th element is Description, which goes under modal image
-          document.querySelector(
-            "#serviceDetails"
-          ).innerHTML += `<p> ${reportDetails[i].textContent} </p>`;
-        }
-      }
-    })
-    .fail(() => {
-      console.log("Hizmet Detay Raporu yüklenemedi!");
-    });
+  //     // writing service details to modal's detail subdivision
+  //     for (let i = 0; i < reportDetails.length; i++) {
+  //       if (i == 3) {
+  //         const text = reportDetails[i].textContent.replace(
+  //           "Projeye Başlama Ve Bitiş Tarihi",
+  //           "Proje Tarihleri"
+  //         ); // shortens the text
+  //         document.querySelector(
+  //           "#serviceDetails"
+  //         ).innerHTML += `<p> ${text} </p>`;
+  //       } else if (i != 4) {
+  //         // 4th element is Description, which goes under modal image
+  //         document.querySelector(
+  //           "#serviceDetails"
+  //         ).innerHTML += `<p> ${reportDetails[i].textContent} </p>`;
+  //       }
+  //     }
+  //   })
+  //   .fail(() => {
+  //     console.log("Hizmet detay raporu yüklenemedi!");
+  //   });
   myModal.toggle(); // show the modal
 });
 
+// Dark mode for elements
 const darkMode = document.getElementById("darkModeSwitch")
 const header = document.getElementById("header")
 let style = "light"
 darkMode.addEventListener("click", ()=>{
-  // if (style === "light" ) {
-  //   style="dark"
-  //   map.setStyle("mapbox://styles/eeatsbs/cks0fywrr29ii18nnwro0fbvb") // dark background
-
-  // } else if (style==="dark") {
-  //   style="light"
-  //   map.setStyle("mapbox://styles/eeatsbs/ckst049v10vtg17mqhf4vc0ve") // white background
-
-  // } else {
-  //   map.setStyle("mapbox://styles/eeatsbs/ckssv8pk30c4618qmjdeuq83b") // satellite background
-    
-  // }
-  header.classList.toggle("bg-light2")
-  header.classList.toggle("bg-dark")
-  header.classList.toggle("text-light")
-  header.classList.toggle("text-dark")
-  sidebar.classList.toggle("text-dark")
-  sidebar.classList.toggle("bg-dark")
-  sidebar.classList.toggle("bg-light2")
-  // sidebar.classList.toggle("text-dark")
-  
+  ["bg-light2", "bg-dark", "text-light", "text-dark"].forEach(c => {
+    header.classList.toggle(c)
+    sidebar.classList.toggle(c)
+  })
 })
 

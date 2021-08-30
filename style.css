@@ -5,6 +5,23 @@ html, body {
   height: 100%;
   width: 100%;
 }
+#loadingScreen{
+  height: 100%;
+  opacity: 70%;
+}
+
+#loadingScreen .offcanvas-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  align-content: center;
+  font-weight: bold;
+  color: black;
+  flex-direction: column;
+}
+
 
 #header {
   /* margin-right: 0; */
@@ -97,26 +114,29 @@ html, body {
   width: 9rem;
 }
 #sideFilter {
-  width: 18rem;
+  width: 24rem;
 }
 
 #sideSearch {
   width: 21rem;
 }
-#sideSearch ul {
+#sideSearch input {
+  z-index: 2;
+}
+#sideSearch ul, #accordionProvinces ul {
   padding-left: 0;
 
 }
-#sideSearch li {
+#sideSearch li, #accordionProvinces li {
   word-wrap: break-word;
   white-space: normal;
   /* border: solid 1px red; */
   border-radius: 10px;
-  background: rgb(65, 65, 65);
+  background: rgb(197, 197, 197);
   margin: 5px;
   padding: 3px;
   list-style-type: none;
-
+  font-size: 1.5em;
 
 }
 
@@ -168,6 +188,3 @@ map .sidebar{
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
-
-
-/* document.querySelector("html").style.fontSize */

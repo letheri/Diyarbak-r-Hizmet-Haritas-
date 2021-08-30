@@ -19,7 +19,7 @@ const sources = [
 // All services combined
 // const allServicesPath = `${gApiLink}/query/GeoJSON?QueryName=geoproje_sinirlari.${"Tum_Hizmetler_Harita"}&sessionid=${sessionID}`; // Netigma Api Query
 const allServicesPath = `data/json/tum_hizmetler.geojson`; // Netigma Api Query
-const ALL_SERVICES = $.getJSON(allServicesPath);
+const allServicesData = $.getJSON(allServicesPath);
 let province_capital_center= []
 // Province and its subdivision borders
 map.on("load", () => {
@@ -29,7 +29,7 @@ map.on("load", () => {
     province_capital_center = provinceBorder["centroid"]
     map.addSource("province_border", {
       type: "geojson",
-      data: bdata,
+      data: bdata.features[0],
     });
 
     map.addLayer({
@@ -58,6 +58,7 @@ map.on("load", () => {
       id: "border_province_capital",
       type: "line",
       source: "provinceCapital_border",
+      maxzoom:12, 
       layout: {
         "visibility": "visible",
         "line-join": "round",
@@ -72,7 +73,7 @@ map.on("load", () => {
       id: "border_province_capital_fill",
       type: "fill",
       source: "provinceCapital_border",
-      maxzoom:11,
+      maxzoom:11, 
       layout: {
         "visibility": "visible",      
       },
@@ -82,7 +83,7 @@ map.on("load", () => {
       },
     });
     let serviceCountinCapital = 0
-    ALL_SERVICES.done((all_data, status) => {
+    allServicesData.done((all_data, status) => {
       // turf.polygon([[[39.05, 38.03], [37.05, 37.39], [37.52, 42.45], [39.14, 42.5], [39.05, 38.03]]], { name: 'mapLimit' });
       const capitalBorder =turf.polygon([bdata.features[1]["geometry"]["coordinates"][0]], { name: 'capitalBorder' });
       for (feature of all_data.features) {
@@ -90,14 +91,11 @@ map.on("load", () => {
           serviceCountinCapital++
         }
       }
-      console.log("data",all_data)
-      console.log("features",all_data.features)
-      console.log(serviceCountinCapital)
       map.addLayer({
         id: "province_capital",
         type: "symbol",
         source: "provinceCapital_border",
-        maxzoom: 9,
+        maxzoom: 11,
         layout: {
           "text-field": serviceCountinCapital+"\nHizmet",
           "text-anchor": "center",
@@ -121,7 +119,7 @@ map.on("load", () => {
       id: "city_borders",
       type: "line",
       source: "subdivision_borders",
-      // minzoom:9,
+      // maxzoom:12,
       layout: {
         // Make the layer visible by default.
         "visibility": "visible",
@@ -169,8 +167,8 @@ function icon_loader(layer) {
     map.addImage(`${layer}_icon`, image);
     map.addSource(layer, {
       type: "geojson",
-      data: `data/json/${layer}.geojson`, // Netigma Api Query
-      // data: `./data/${layer}.geojson`,
+      data: `data/json/${layer}.geojson`, 
+      // data: `./data/${layer}.geojson`, 
     });
     ilSınır.then((bdata) => {
       const capitalBorder = bdata.features[1]
@@ -178,27 +176,21 @@ function icon_loader(layer) {
         id: "layerC_" + layer,
         type: "symbol",
         source: layer,
-        filter: ["within",capitalBorder],
+        filter: ["within",capitalBorder], // services inside capital
         minzoom: 11,
         layout: {
           "icon-image": `${layer}_icon`,
           "icon-size": 0.10,
           "icon-allow-overlap": true,
-          // [
-          //   'interpolate',
-          //   ['linear'],
-          //   ['zoom'],
-          //   0,0.01,
-          //   24,0.15
-          // ],
           "visibility": "visible",
         },
       });
+
       map.addLayer({
         id: "layer_" + layer,
         type: "symbol",
         source: layer,
-        filter: ["!",["within",capitalBorder]],
+        filter: ["!",["within",capitalBorder]], // services outside capital
         // minzoom: 9,
         layout: {
           "icon-image": `${layer}_icon`,
@@ -216,5 +208,17 @@ function icon_loader(layer) {
     })
   });
 
-  // map.moveLayer("layer_" + layer, 'country-label');
 }
+ALL_SERVICES = {services:{},subdivisions:{}}
+allServicesData.done(function (data) {
+
+  for (const i of data.features) {
+    ALL_SERVICES.services[i.properties["Proje Adı"]] = i.geometry.coordinates;
+    if(!ALL_SERVICES.subdivisions[i.properties["İlçe Adı"]]) {
+      ALL_SERVICES.subdivisions[i.properties["İlçe Adı"]] = []
+    }
+    ALL_SERVICES.subdivisions[i.properties["İlçe Adı"]].push(i.properties["Proje Adı"])
+         
+    }
+  
+})

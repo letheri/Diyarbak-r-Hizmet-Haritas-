@@ -19,73 +19,85 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body class="">
-  <div>
-    <div id="header" class="container-fluid text-justify text-dark bg-light2">
-      <header class="d-flex align-items-center justify-content-between py-3">
-        <a href="/" class="d-flex align-items-center col-1 text-decoration-none logo">
-            <img class="img-fluid" src="./data/icons/logo.png">
-        </a>
-        <div class="col-10 fw-bold">
-          <p>HİZMET - Diyarbakır Büyükşehir Belediyesi</p>
-        </div>
-        <div class="col-1 justify-content-center">
-          <div class="form-check form-switch float-end">
-            <input id="darkModeSwitch" class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
-            <i class="bi bi-moon"></i>
-            <!-- Gece Modu -->
-          </div>
-        </div>
-      </header>
+
+  <div class="offcanvas offcanvas-top justify-items-center align-items-center text-justify show" data-bs-scroll="false" data-bs-backdrop="false" style="visibility: visible;" tabindex="-1" id="loadingScreen" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-body">
+      <div class="spinner-border p-3 m-3" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <h3>Lütfen bekleyiniz, içerik yükleniyor.</h3>
     </div>
   </div>
-  <div>
-      <!-- Sidebar -->
-      <div id="sidebar" class="d-flex sideMenu align-items-center bg-light2 text-dark">
-        <div id="sidebarButtons">
-                <a><i class="bi-layers"></i></a>
-                <a><i class="bi-funnel"></i></a>
-                <a><i class="bi-search"></i></a>
-        </div>
+  <div id="header" class="container-fluid text-justify text-dark bg-light2">
+    <header class="d-flex align-items-center justify-content-between py-3">
+      <!-- Logo -->
+      <a href="/" class="d-flex align-items-center col-1 text-decoration-none logo">
+          <img class="img-fluid" src="./data/icons/logo.png">
+      </a>
+      <!-- Başlık -->
+      <div class="col-10 fw-bold">
+        <p>HİZMET - Diyarbakır Büyükşehir Belediyesi</p>
+      </div>
 
-        <div id="sidebarNames" class="col invisible">
-            <a>Hizmet Tipleri</a>
-            <a>Filtrele</a>
-            <a>Arama</a>
+      <!-- Gece Modu -->
+      <div class="col-1 justify-content-center">
+        <div class="form-check form-switch float-end">
+          <input id="darkModeSwitch" class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
+          <i class="bi bi-moon"></i>
         </div>
+      </div>
+    </header>
+  </div>
 
-        <div id="layerIcons" class="col invisible">
-            <a><img src="./data/icons/park_bahce.png"></a>
-            <p>Park ve Bahçeler</p>
-            <a><img src="./data/icons/fen_isleri.png"></a>
-            <p>Fen İşleri</p>
-            <a><img src="./data/icons/egitim.png"></a>
-            <p>Eğitim</p>
-            <a><img src="./data/icons/etut_proje.png"></a>
-            <p>Etüt Projeler</p>
-            <a><img src="./data/icons/sosyal.png"></a>
-            <p>Sosyal Hizmetler</p>
-            <a><img src="./data/icons/kulturel.png"></a>
-            <p>Kültürel Hizmetler</p>
-        </div>
-
-        <div id="sideSearch" class="col invisible align-self-start pt-3">
-          <label class="form-label" for="form1">Hizmet Ara</label>
-          <div class="input-group">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control" />
-            </div>
-            <button id=sideSearchBtn type="button" class="btn btn-primary">
-              <i class="bi bi-search"></i>
-            </button>
-          </div>
-          <ul></ul>
-        </div>
-
-        <div id="sideFilter" class="col invisible">
-          
-        </div>  
-      </div>      
+  <!-- Sidebar -->
+  <div id="sidebar" class="d-flex sideMenu align-items-center bg-light2 text-dark">
+    <div id="sidebarButtons">
+            <a><i class="bi-layers"></i></a>
+            <a><i class="bi-funnel"></i></a>
+            <a><i class="bi-search"></i></a>
     </div>
+
+    <div id="sidebarNames" class="col invisible">
+        <a>Hizmet Tipleri</a>
+        <a>Filtrele</a>
+        <a>Arama</a>
+    </div>
+    <!-- Sidebar Switch -->
+    <div id="layerIcons" class="col invisible">
+        <a><img src="./data/icons/park_bahce.png"></a>
+        <p>Park ve Bahçeler</p>
+        <a><img src="./data/icons/fen_isleri.png"></a>
+        <p>Fen İşleri</p>
+        <a><img src="./data/icons/egitim.png"></a>
+        <p>Eğitim</p>
+        <a><img src="./data/icons/etut_proje.png"></a>
+        <p>Etüt Projeler</p>
+        <a><img src="./data/icons/sosyal.png"></a>
+        <p>Sosyal Hizmetler</p>
+        <a><img src="./data/icons/kulturel.png"></a>
+        <p>Kültürel Hizmetler</p>
+    </div>
+
+    <!-- Sidebar Search -->
+    <div id="sideSearch" class="col invisible align-self-start pt-3">
+      <label class="form-label" for="srvSearch">Hizmet Ara</label>
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="srvSearch" class="form-control" />
+        </div>
+        <button id=sideSearchBtn type="button" class="btn btn-primary">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <ul></ul> 
+    </div>  
+
+    <!-- Sidebar Filter -->
+    <div id="sideFilter" class="col invisible align-self-start pt-3">
+      <h3>İlçelere Göre Hizmetler</h3>
+      <div class="accordion" id="accordionProvinces"></div>
+    </div>  
+  </div>      
     <!-- Map -->
   <section class="map_box_container">
     <div id='map'></div>
@@ -117,10 +129,17 @@
     var map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/eeatsbs/ckssv8pk30c4618qmjdeuq83b", // satellite background
-      zoom: 8,
-      center: [40.1, 38],
+      zoom: 8.7,
+      center: [40.3, 38.1],
     });
+    const searchBtn = document.getElementById("srvSearch");
+    searchBtn.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
 
+      document.getElementById("sideSearchBtn").click();
+      }
+    });
   </script>
 <script src="data_load.js"></script>
 <script src="app.js"></script>

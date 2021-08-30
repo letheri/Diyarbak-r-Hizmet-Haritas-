@@ -1,5 +1,5 @@
 html {
-  font-size:80%;
+  font-size:0.8vw;
 }
 html, body {
   height: 100%;
@@ -23,6 +23,14 @@ html, body {
   text-align: center;
 }
 
+.bg-light2 {
+  background-color: #d8d8d8;
+}
+
+.logo img {
+  padding: 0.3em;
+  width: 3.5rem;
+}
 /* Mapbox Canvas */
 .map_box_container{
   margin-left: 4rem;
@@ -61,6 +69,7 @@ html, body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 
 #sidebarButtons i {
   font-size: 3rem;
@@ -112,15 +121,20 @@ html, body {
 }
 
 #layerIcons img {
-  margin: 1rem 0rem 1rem 2rem;
+  margin: 1rem auto 0rem auto;
   max-width: 4rem;
   height: auto;
   border-radius: 100%;
   border: solid oldlace;
   border-width: thin;
   transition: none;
+  display: block;
 }
-
+#layerIcons p {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-right: 0.3em;
+}
 
 
 map .sidebar{

@@ -1,0 +1,520 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "ORTAÖREN",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Mevcut Vahşi Depolama Sahasının Rehabilitasyonu, Gaz Toplama Sistemi, Toplanan Çöp Gazından(LFG) Elektrik Üretim Santralinin Kurulması ve EKAY Tesislerinin Yapımı Ve İşletilmesi İşi",
+        "Poly": 88,
+        "Objectid": "88",
+        "SYS::GeometryKey": 88,
+        "SYS::InterriorPoint": [39.85999008792139, 37.86222420462479],
+        "SYS::Centroid": [39.85999008792139, 37.86222420462479],
+        "SYS::Envelope": [
+          [39.85999008792138, 37.86222420462478],
+          [39.859990087921396, 37.86222420462478],
+          [39.859990087921396, 37.862224204624795],
+          [39.85999008792138, 37.862224204624795],
+          [39.85999008792138, 37.86222420462478]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.85999008792139, 37.86222420462479],
+      "geometryKey": 88,
+      "centroid": [39.85999008792139, 37.86222420462479],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.85999008792139, 37.86222420462479, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "BAĞCILAR",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Ahmet Kaya Caddesi",
+        "Poly": 101,
+        "Objectid": "101",
+        "SYS::GeometryKey": 101,
+        "SYS::InterriorPoint": [40.13102493210655, 37.91167417625761],
+        "SYS::Centroid": [40.13102493210655, 37.91167417625761],
+        "SYS::Envelope": [
+          [40.13102493210654, 37.911674176257605],
+          [40.131024932106556, 37.911674176257605],
+          [40.131024932106556, 37.91167417625762],
+          [40.13102493210654, 37.91167417625762],
+          [40.13102493210654, 37.911674176257605]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.13102493210655, 37.91167417625761],
+      "geometryKey": 101,
+      "centroid": [40.13102493210655, 37.91167417625761],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.13102493210655, 37.91167417625761, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "BAĞCILAR",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Yeni Hal Kavşağı Düzenleme",
+        "Poly": 96,
+        "Objectid": "96",
+        "SYS::GeometryKey": 96,
+        "SYS::InterriorPoint": [40.172388396260814, 37.92484122849085],
+        "SYS::Centroid": [40.172388396260814, 37.92484122849085],
+        "SYS::Envelope": [
+          [40.17238839626081, 37.92484122849084],
+          [40.17238839626082, 37.92484122849084],
+          [40.17238839626082, 37.924841228490855],
+          [40.17238839626081, 37.924841228490855],
+          [40.17238839626081, 37.92484122849084]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.172388396260814, 37.92484122849085],
+      "geometryKey": 96,
+      "centroid": [40.172388396260814, 37.92484122849085],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.172388396260814, 37.92484122849085, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "BAĞCILAR",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Şato Kavşağı Düzenleme",
+        "Poly": 97,
+        "Objectid": "97",
+        "SYS::GeometryKey": 97,
+        "SYS::InterriorPoint": [40.166265424055034, 37.923318072484705],
+        "SYS::Centroid": [40.166265424055034, 37.923318072484705],
+        "SYS::Envelope": [
+          [40.16626542405503, 37.9233180724847],
+          [40.16626542405504, 37.9233180724847],
+          [40.16626542405504, 37.92331807248471],
+          [40.16626542405503, 37.92331807248471],
+          [40.16626542405503, 37.9233180724847]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.166265424055034, 37.923318072484705],
+      "geometryKey": 97,
+      "centroid": [40.166265424055034, 37.923318072484705],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.166265424055034, 37.923318072484705, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "MEVLANA HALİT",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Doç. Dr. Ahmet Bilgin Caddesi",
+        "Poly": 100,
+        "Objectid": "100",
+        "SYS::GeometryKey": 100,
+        "SYS::InterriorPoint": [40.210680786251075, 37.92525154011603],
+        "SYS::Centroid": [40.210680786251075, 37.92525154011603],
+        "SYS::Envelope": [
+          [40.21068078625107, 37.92525154011602],
+          [40.21068078625108, 37.92525154011602],
+          [40.21068078625108, 37.92525154011604],
+          [40.21068078625107, 37.92525154011604],
+          [40.21068078625107, 37.92525154011602]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.210680786251075, 37.92525154011603],
+      "geometryKey": 100,
+      "centroid": [40.210680786251075, 37.92525154011603],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.210680786251075, 37.92525154011603, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BİSMİL",
+        "İdari Mahalle Adı": "FIRAT",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "Bismil ilçe merkezinde kaldırım aydınlatma ve peyzaj çalışmaları",
+        "Poly": 106,
+        "Objectid": "106",
+        "SYS::GeometryKey": 106,
+        "SYS::InterriorPoint": [40.66353578980722, 37.84348410827134],
+        "SYS::Centroid": [40.66353578980722, 37.84348410827134],
+        "SYS::Envelope": [
+          [40.66353578980721, 37.84348410827133],
+          [40.66353578980723, 37.84348410827133],
+          [40.66353578980723, 37.84348410827135],
+          [40.66353578980721, 37.84348410827135],
+          [40.66353578980721, 37.84348410827133]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.66353578980722, 37.84348410827134],
+      "geometryKey": 106,
+      "centroid": [40.66353578980722, 37.84348410827134],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.66353578980722, 37.84348410827134, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "EĞİL",
+        "İdari Mahalle Adı": "DERE",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Eğil Kalesi ve Peygamber Kabirleri Çevre Düzenleme Projesi",
+        "Poly": 85,
+        "Objectid": "85",
+        "SYS::GeometryKey": 85,
+        "SYS::InterriorPoint": [40.099288143314155, 38.25331051607529],
+        "SYS::Centroid": [40.099288143314155, 38.25331051607529],
+        "SYS::Envelope": [
+          [40.09928814331415, 38.25331051607528],
+          [40.09928814331416, 38.25331051607528],
+          [40.09928814331416, 38.253310516075295],
+          [40.09928814331415, 38.253310516075295],
+          [40.09928814331415, 38.25331051607528]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.099288143314155, 38.25331051607529],
+      "geometryKey": 85,
+      "centroid": [40.099288143314155, 38.25331051607529],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.099288143314155, 38.25331051607529, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "BARIŞ",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Rıha Caddesi",
+        "Poly": 99,
+        "Objectid": "99",
+        "SYS::GeometryKey": 99,
+        "SYS::InterriorPoint": [40.11275163588979, 37.920925671186325],
+        "SYS::Centroid": [40.11275163588979, 37.920925671186325],
+        "SYS::Envelope": [
+          [40.112751635889786, 37.92092567118632],
+          [40.1127516358898, 37.92092567118632],
+          [40.1127516358898, 37.92092567118633],
+          [40.112751635889786, 37.92092567118633],
+          [40.112751635889786, 37.92092567118632]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.11275163588979, 37.920925671186325],
+      "geometryKey": 99,
+      "centroid": [40.11275163588979, 37.920925671186325],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.11275163588979, 37.920925671186325, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "MEDYA",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Mastfroş Caddesi",
+        "Poly": 102,
+        "Objectid": "102",
+        "SYS::GeometryKey": 102,
+        "SYS::InterriorPoint": [40.16167245493349, 37.956271779934276],
+        "SYS::Centroid": [40.16167245493349, 37.956271779934276],
+        "SYS::Envelope": [
+          [40.16167245493348, 37.95627177993427],
+          [40.161672454933495, 37.95627177993427],
+          [40.161672454933495, 37.95627177993428],
+          [40.16167245493348, 37.95627177993428],
+          [40.16167245493348, 37.95627177993427]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.16167245493349, 37.956271779934276],
+      "geometryKey": 102,
+      "centroid": [40.16167245493349, 37.956271779934276],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.16167245493349, 37.956271779934276, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "MEDYA",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Mezopotamya Caddesi",
+        "Poly": 98,
+        "Objectid": "98",
+        "SYS::GeometryKey": 98,
+        "SYS::InterriorPoint": [40.15842931478903, 37.970479350431525],
+        "SYS::Centroid": [40.15842931478903, 37.970479350431525],
+        "SYS::Envelope": [
+          [40.158429314789025, 37.97047935043152],
+          [40.15842931478904, 37.97047935043152],
+          [40.15842931478904, 37.97047935043153],
+          [40.158429314789025, 37.97047935043153],
+          [40.158429314789025, 37.97047935043152]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.15842931478903, 37.970479350431525],
+      "geometryKey": 98,
+      "centroid": [40.15842931478903, 37.970479350431525],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.15842931478903, 37.970479350431525, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "YEŞİLVADİ",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Canlı Hayvan Borsası Bakım Onarım İşi",
+        "Poly": 95,
+        "Objectid": "95",
+        "SYS::GeometryKey": 95,
+        "SYS::InterriorPoint": [40.240221971915915, 37.837055964441454],
+        "SYS::Centroid": [40.240221971915915, 37.837055964441454],
+        "SYS::Envelope": [
+          [40.24022197191591, 37.83705596444145],
+          [40.24022197191592, 37.83705596444145],
+          [40.24022197191592, 37.83705596444146],
+          [40.24022197191591, 37.83705596444146],
+          [40.24022197191591, 37.83705596444145]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.240221971915915, 37.837055964441454],
+      "geometryKey": 95,
+      "centroid": [40.240221971915915, 37.837055964441454],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.240221971915915, 37.837055964441454, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "CAMİ KEBİR",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "MELİKAHMET CADDESİ VE BAĞLANTI YOLLARI KÜPTAŞ YAPIM İŞİ.",
+        "Poly": 68,
+        "Objectid": "68",
+        "SYS::GeometryKey": 68,
+        "SYS::InterriorPoint": [40.2367519287357, 37.91103433131067],
+        "SYS::Centroid": [40.2367519287357, 37.91103433131067],
+        "SYS::Envelope": [
+          [40.23675192873569, 37.91103433131066],
+          [40.23675192873571, 37.91103433131066],
+          [40.23675192873571, 37.911034331310674],
+          [40.23675192873569, 37.911034331310674],
+          [40.23675192873569, 37.91103433131066]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.2367519287357, 37.91103433131067],
+      "geometryKey": 68,
+      "centroid": [40.2367519287357, 37.91103433131067],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.2367519287357, 37.91103433131067, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "DABANOĞLU",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "riçi Muhtelif Caddeler Küptaş Yapım İşi",
+        "Poly": 83,
+        "Objectid": "83",
+        "SYS::GeometryKey": 83,
+        "SYS::InterriorPoint": [40.241745272568494, 37.913377950382554],
+        "SYS::Centroid": [40.241745272568494, 37.913377950382554],
+        "SYS::Envelope": [
+          [40.24174527256849, 37.91337795038255],
+          [40.2417452725685, 37.91337795038255],
+          [40.2417452725685, 37.91337795038256],
+          [40.24174527256849, 37.91337795038256],
+          [40.24174527256849, 37.91337795038255]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.241745272568494, 37.913377950382554],
+      "geometryKey": 83,
+      "centroid": [40.241745272568494, 37.913377950382554],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.241745272568494, 37.913377950382554, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "KOOPERATİFLER",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Yol Yapımı",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "İstasyon Köprüsü",
+        "Poly": 55,
+        "Objectid": "55",
+        "SYS::GeometryKey": 55,
+        "SYS::InterriorPoint": [40.21650239881581, 37.9138759587653],
+        "SYS::Centroid": [40.21650239881581, 37.9138759587653],
+        "SYS::Envelope": [
+          [40.216502398815805, 37.913875958765296],
+          [40.21650239881582, 37.913875958765296],
+          [40.21650239881582, 37.91387595876531],
+          [40.216502398815805, 37.91387595876531],
+          [40.216502398815805, 37.913875958765296]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.21650239881581, 37.9138759587653],
+      "geometryKey": 55,
+      "centroid": [40.21650239881581, 37.9138759587653],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.21650239881581, 37.9138759587653, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "KOOPERATİFLER",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Sanat Sokağı altyapı ve üstyapı çalışmaları",
+        "Poly": 92,
+        "Objectid": "92",
+        "SYS::GeometryKey": 92,
+        "SYS::InterriorPoint": [40.22036718863977, 37.91997686205055],
+        "SYS::Centroid": [40.22036718863977, 37.91997686205055],
+        "SYS::Envelope": [
+          [40.22036718863976, 37.91997686205054],
+          [40.22036718863978, 37.91997686205054],
+          [40.22036718863978, 37.919976862050554],
+          [40.22036718863976, 37.919976862050554],
+          [40.22036718863976, 37.91997686205054]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.22036718863977, 37.91997686205055],
+      "geometryKey": 92,
+      "centroid": [40.22036718863977, 37.91997686205055],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.22036718863977, 37.91997686205055, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "YENİŞEHİR",
+        "Proje Üst Türü": "FEN İŞLERİ HİZMETLERİ",
+        "Proje Türü": "Meydan Düzenlemesi",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Selahattin Eyyubi Yeraltı Çarşısı Kamulaştırma Çalışması",
+        "Poly": 104,
+        "Objectid": "104",
+        "SYS::GeometryKey": 104,
+        "SYS::InterriorPoint": [40.23510401517203, 37.916280103362006],
+        "SYS::Centroid": [40.23510401517203, 37.916280103362006],
+        "SYS::Envelope": [
+          [40.23510401517202, 37.916280103362],
+          [40.235104015172034, 37.916280103362],
+          [40.235104015172034, 37.91628010336201],
+          [40.23510401517202, 37.91628010336201],
+          [40.23510401517202, 37.916280103362]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.23510401517203, 37.916280103362006],
+      "geometryKey": 104,
+      "centroid": [40.23510401517203, 37.916280103362006],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.23510401517203, 37.916280103362006, 0]
+      }
+    }
+  ],
+  "bbox": [
+    39.85999008792139, 37.837055964441454, 40.66353578980722, 38.25331051607529
+  ]
+}

@@ -1,8 +1,11 @@
 const sessionID = "3a442a1049474ff4bafd35637ef44389";
+const gApiLink = "http://cbs.diyarbakir.bel.tr/BELNET/gisapi" // shortens the link length
 ////
-const bordersLink = borderName => `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=${borderName}&sessionid=${sessionID}`
-const ilceSınır = $.getJSON(bordersLink("geoilceler.ilceler_hizmet"));
-const ilSınır = $.getJSON(bordersLink("geoiller.Geoiller_Hizmet"));
+// const bordersLink = borderName => `${gApiLink}/query/geojson?queryname=${borderName}&sessionid=${sessionID}`
+// const ilceSınır = $.getJSON(bordersLink("geoilceler.ilceler_hizmet"));
+// const ilSınır = $.getJSON(bordersLink("geoiller.Geoiller_Hizmet"));
+const ilceSınır = $.getJSON("data/json/ilce_sinir2.geojson");
+const ilSınır = $.getJSON("data/json/diyarbakir_il.geojson");
 // City Service Names
 const sources = [
   "park_bahce",
@@ -14,7 +17,8 @@ const sources = [
 ];
 
 // All services combined
-const allServicesPath = `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?QueryName=geoproje_sinirlari.${"Tum_Hizmetler_Harita"}&sessionid=${sessionID}`; // Netigma Api Query
+// const allServicesPath = `${gApiLink}/query/GeoJSON?QueryName=geoproje_sinirlari.${"Tum_Hizmetler_Harita"}&sessionid=${sessionID}`; // Netigma Api Query
+const allServicesPath = `data/json/tum_hizmetler.geojson`; // Netigma Api Query
 const ALL_SERVICES = $.getJSON(allServicesPath);
 let province_capital_center= []
 // Province and its subdivision borders
@@ -93,7 +97,7 @@ map.on("load", () => {
         id: "province_capital",
         type: "symbol",
         source: "provinceCapital_border",
-        maxzoom: 10,
+        maxzoom: 9,
         layout: {
           "text-field": serviceCountinCapital+"\nHizmet",
           "text-anchor": "center",
@@ -165,7 +169,7 @@ function icon_loader(layer) {
     map.addImage(`${layer}_icon`, image);
     map.addSource(layer, {
       type: "geojson",
-      data: `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?QueryName=geoproje_sinirlari.${netigmaGeoJson[layer]}&sessionid=${sessionID}`, // Netigma Api Query
+      data: `data/json/${layer}.geojson`, // Netigma Api Query
       // data: `./data/${layer}.geojson`,
     });
     ilSınır.then((bdata) => {

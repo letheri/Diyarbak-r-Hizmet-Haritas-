@@ -20,12 +20,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body class="">
   <div>
-    <div id="header" class="container-fluid text-justify text-dark bg-light">
+    <div id="header" class="container-fluid text-justify text-dark bg-light2">
       <header class="d-flex align-items-center justify-content-between py-3">
-        <a href="/" class="d-flex align-items-center col-1 mb-2 text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"></svg>
+        <a href="/" class="d-flex align-items-center col-1 text-decoration-none logo">
+            <img class="img-fluid" src="./data/icons/logo.png">
         </a>
-        <p class="col-10 fw-bold">HİZMET - Diyarbakır Büyükşehir Belediyesi</p>
+        <div class="col-10 fw-bold">
+          <p>HİZMET - Diyarbakır Büyükşehir Belediyesi</p>
+        </div>
         <div class="col-1 justify-content-center">
           <div class="form-check form-switch float-end">
             <input id="darkModeSwitch" class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
@@ -38,7 +40,7 @@
   </div>
   <div>
       <!-- Sidebar -->
-      <div id="sidebar" class="d-flex sideMenu align-items-center bg-light text-dark">
+      <div id="sidebar" class="d-flex sideMenu align-items-center bg-light2 text-dark">
         <div id="sidebarButtons">
                 <a><i class="bi-layers"></i></a>
                 <a><i class="bi-funnel"></i></a>
@@ -53,11 +55,17 @@
 
         <div id="layerIcons" class="col invisible">
             <a><img src="./data/icons/park_bahce.png"></a>
+            <p>Park ve Bahçeler</p>
             <a><img src="./data/icons/fen_isleri.png"></a>
+            <p>Fen İşleri</p>
             <a><img src="./data/icons/egitim.png"></a>
+            <p>Eğitim</p>
             <a><img src="./data/icons/etut_proje.png"></a>
+            <p>Etüt Projeler</p>
             <a><img src="./data/icons/sosyal.png"></a>
+            <p>Sosyal Hizmetler</p>
             <a><img src="./data/icons/kulturel.png"></a>
+            <p>Kültürel Hizmetler</p>
         </div>
 
         <div id="sideSearch" class="col invisible align-self-start pt-3">
@@ -81,7 +89,6 @@
     <!-- Map -->
   <section class="map_box_container">
     <div id='map'></div>
-    <!-- <img id="cow" src="https://picsum.photos/id/200/1920/1080"> -->
   </section>
   <!-- Modal -->
   <div class="modal fade" id="infoModal" tabindex="-1">

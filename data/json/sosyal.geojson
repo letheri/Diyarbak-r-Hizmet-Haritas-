@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "BENEKLİTAŞ",
+        "Proje Üst Türü": "SOSYAL HİZMETLER",
+        "Proje Türü": "Sosyal Proje",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "Diyarbakır Lojistik Köyü",
+        "Poly": 107,
+        "Objectid": "107",
+        "SYS::GeometryKey": 107,
+        "SYS::InterriorPoint": [40.08891969035052, 38.03172211620419],
+        "SYS::Centroid": [40.08891969035052, 38.03172211620419],
+        "SYS::Envelope": [
+          [40.088919690350515, 38.031722116204186],
+          [40.08891969035053, 38.031722116204186],
+          [40.08891969035053, 38.0317221162042],
+          [40.088919690350515, 38.0317221162042],
+          [40.088919690350515, 38.031722116204186]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.08891969035052, 38.03172211620419],
+      "geometryKey": 107,
+      "centroid": [40.08891969035052, 38.03172211620419],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.08891969035052, 38.03172211620419, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "BARIŞ",
+        "Proje Üst Türü": "SOSYAL HİZMETLER",
+        "Proje Türü": "Spor",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "SPOR PARKI YAPIM İŞİ",
+        "Poly": 77,
+        "Objectid": "77",
+        "SYS::GeometryKey": 77,
+        "SYS::InterriorPoint": [40.12511834521009, 37.94052882833747],
+        "SYS::Centroid": [40.12511834521009, 37.94052882833747],
+        "SYS::Envelope": [
+          [40.12511834521008, 37.94052882833746],
+          [40.1251183452101, 37.94052882833746],
+          [40.1251183452101, 37.94052882833748],
+          [40.12511834521008, 37.94052882833748],
+          [40.12511834521008, 37.94052882833746]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.12511834521009, 37.94052882833747],
+      "geometryKey": 77,
+      "centroid": [40.12511834521009, 37.94052882833747],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.12511834521009, 37.94052882833747, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "MEDYA",
+        "Proje Üst Türü": "SOSYAL HİZMETLER",
+        "Proje Türü": "Sosyal Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Diyarbakır Organik Ürünler Pazarı",
+        "Poly": 93,
+        "Objectid": "93",
+        "SYS::GeometryKey": 93,
+        "SYS::InterriorPoint": [40.16295530898076, 37.957290465050946],
+        "SYS::Centroid": [40.16295530898076, 37.957290465050946],
+        "SYS::Envelope": [
+          [40.162955308980756, 37.95729046505094],
+          [40.16295530898077, 37.95729046505094],
+          [40.16295530898077, 37.95729046505095],
+          [40.162955308980756, 37.95729046505095],
+          [40.162955308980756, 37.95729046505094]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.16295530898076, 37.957290465050946],
+      "geometryKey": 93,
+      "centroid": [40.16295530898076, 37.957290465050946],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.16295530898076, 37.957290465050946, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "FATİHPAŞA",
+        "Proje Üst Türü": "SOSYAL HİZMETLER",
+        "Proje Türü": "Sosyal Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Millet Bahçesi Sosyal Tesis Projesi",
+        "Poly": 84,
+        "Objectid": "84",
+        "SYS::GeometryKey": 84,
+        "SYS::InterriorPoint": [40.24527056212247, 37.91127749434969],
+        "SYS::Centroid": [40.24527056212247, 37.91127749434969],
+        "SYS::Envelope": [
+          [40.245270562122464, 37.91127749434968],
+          [40.24527056212248, 37.91127749434968],
+          [40.24527056212248, 37.9112774943497],
+          [40.245270562122464, 37.9112774943497],
+          [40.245270562122464, 37.91127749434968]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.24527056212247, 37.91127749434969],
+      "geometryKey": 84,
+      "centroid": [40.24527056212247, 37.91127749434969],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.24527056212247, 37.91127749434969, 0]
+      }
+    }
+  ],
+  "bbox": [
+    40.08891969035052, 37.91127749434969, 40.24527056212247, 38.03172211620419
+  ]
+}

@@ -1,7 +1,6 @@
-// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?
-// QueryName=geoproje_sinirlari.etut_proje_hizmet_harita&sessionid=7bd9b5fc67d646b5b8859a6110ac39b7
-// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=geoilceler.ilceler_hizmet&sessionid=e5be987ac4794c968c4dce869168f4b0
-// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=geoiller.Geoiller_Hizmet&sessionid=e5be987ac4794c968c4dce869168f4b0
+// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/GeoJSON?QueryName=geoproje_sinirlari.etut_proje_hizmet_harita&sessionid=
+// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=geoilceler.ilceler_hizmet&sessionid=
+// http://cbs.diyarbakir.bel.tr/BELNET/gisapi/query/geojson?queryname=geoiller.Geoiller_Hizmet&sessionid=
 const netigmaReportNames = {
   egitim: "egitim_hizmet_detay",
   fen_isleri: "fen_is_hizmet_detay",

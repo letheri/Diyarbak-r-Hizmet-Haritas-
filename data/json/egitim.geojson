@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "SELAHATTİN EYYUBİ",
+        "Proje Üst Türü": "EĞİTİM HİZMETLERİ",
+        "Proje Türü": "Eğitim",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "DİYARBAKIR BÜYÜKŞEHİR BELEDİYESİ KONUKEVİ KIZ YURDU ",
+        "Poly": 94,
+        "Objectid": "94",
+        "SYS::GeometryKey": 94,
+        "SYS::InterriorPoint": [40.204056623251894, 37.933638273768814],
+        "SYS::Centroid": [40.204056623251894, 37.933638273768814],
+        "SYS::Envelope": [
+          [40.20405662325189, 37.93363827376881],
+          [40.2040566232519, 37.93363827376881],
+          [40.2040566232519, 37.93363827376882],
+          [40.20405662325189, 37.93363827376882],
+          [40.20405662325189, 37.93363827376881]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.204056623251894, 37.933638273768814],
+      "geometryKey": 94,
+      "centroid": [40.204056623251894, 37.933638273768814],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.204056623251894, 37.933638273768814, 0]
+      }
+    }
+  ],
+  "bbox": [
+    40.204056623251894, 37.933638273768814, 40.204056623251894,
+    37.933638273768814
+  ]
+}

@@ -130,9 +130,9 @@ function iconClickHandler(iconElement, e) {
   e.preventDefault();
   e.stopPropagation();
   const iconName = iconElement.children[0].src.match(/\w+/gm); // Regex match to extract clicked icon's name
-  const iconLayerName = "layer_" + iconName[iconName.length - 2]; // Service icons
-  const iconLayerNameF = "circle_" + iconLayerName;               // circles on zoomed out
-  // const iconLayerNameS = "circle2_" + iconLayerName;               // circles on zoomed out
+  const iconLayerName = "layer_" + iconName[iconName.length - 2];     // Service icons
+  const iconLayerNameF = "layerC_" + iconName[iconName.length - 2];   // Service icons in province capital
+
   var visibility = map.getLayoutProperty(iconLayerName, "visibility");
   var visibility = map.getLayoutProperty(iconLayerNameF, "visibility");
   // var visibility = map.getLayoutProperty(iconLayerNameS, "visibility");
@@ -214,7 +214,7 @@ map.on("click", (e) => {  // Event listener for clicked service point
   const reportName = netigmaReportNames[feature.source];
   // Netigma report gotten with parameters that are coming from clicked points features
   // returns HTML code
-  link = `http://cbs.diyarbakir.bel.tr/BELNET/gisapi/report/get?reportName=geoproje_sinirlari.${reportName}&sessionid=e5be987ac4794c968c4dce869168f4b0&filter=objectid=${pointID}&key=${pointID}`;
+  link = `${gApiLink}/report/get?reportName=geoproje_sinirlari.${reportName}&sessionid=e5be987ac4794c968c4dce869168f4b0&filter=objectid=${pointID}&key=${pointID}`;
   $.get(link)
     .done((data) => {
       const extraInfo = document.querySelector(".extra-info"); // HTML netigma code put into invisible div
@@ -266,13 +266,13 @@ darkMode.addEventListener("click", ()=>{
   //   map.setStyle("mapbox://styles/eeatsbs/ckssv8pk30c4618qmjdeuq83b") // satellite background
     
   // }
-  header.classList.toggle("bg-light")
+  header.classList.toggle("bg-light2")
   header.classList.toggle("bg-dark")
   header.classList.toggle("text-light")
   header.classList.toggle("text-dark")
   sidebar.classList.toggle("text-dark")
   sidebar.classList.toggle("bg-dark")
-  sidebar.classList.toggle("bg-light")
+  sidebar.classList.toggle("bg-light2")
   // sidebar.classList.toggle("text-dark")
   
 })

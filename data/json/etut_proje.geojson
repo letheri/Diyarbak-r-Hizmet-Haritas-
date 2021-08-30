@@ -1,0 +1,840 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "5 NİSAN",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Sakarya Caddesi Sokak Sağlıklaştırma ve Cephe Yenileme İşi",
+        "Poly": 105,
+        "Objectid": "105",
+        "SYS::GeometryKey": 105,
+        "SYS::InterriorPoint": [40.20967188103895, 37.922087434323316],
+        "SYS::Centroid": [40.20967188103895, 37.922087434323316],
+        "SYS::Envelope": [
+          [40.20967188103894, 37.92208743432331],
+          [40.20967188103896, 37.92208743432331],
+          [40.20967188103896, 37.92208743432332],
+          [40.20967188103894, 37.92208743432332],
+          [40.20967188103894, 37.92208743432331]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.20967188103895, 37.922087434323316],
+      "geometryKey": 105,
+      "centroid": [40.20967188103895, 37.922087434323316],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.20967188103895, 37.922087434323316, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BİSMİL",
+        "İdari Mahalle Adı": "ERLER",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Erler Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 113,
+        "Objectid": "113",
+        "SYS::GeometryKey": 113,
+        "SYS::InterriorPoint": [40.63001287711355, 38.02630029614065],
+        "SYS::Centroid": [40.63001287711355, 38.02630029614065],
+        "SYS::Envelope": [
+          [40.63001287711354, 38.02630029614064],
+          [40.63001287711356, 38.02630029614064],
+          [40.63001287711356, 38.026300296140654],
+          [40.63001287711354, 38.026300296140654],
+          [40.63001287711354, 38.02630029614064]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.63001287711355, 38.02630029614065],
+      "geometryKey": 113,
+      "centroid": [40.63001287711355, 38.02630029614065],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.63001287711355, 38.02630029614065, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BİSMİL",
+        "İdari Mahalle Adı": "UĞRAK",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Uğrak Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 128,
+        "Objectid": "128",
+        "SYS::GeometryKey": 128,
+        "SYS::InterriorPoint": [40.82103111502252, 37.99664678756413],
+        "SYS::Centroid": [40.82103111502252, 37.99664678756413],
+        "SYS::Envelope": [
+          [40.821031115022514, 37.996646787564124],
+          [40.82103111502253, 37.996646787564124],
+          [40.82103111502253, 37.99664678756414],
+          [40.821031115022514, 37.99664678756414],
+          [40.821031115022514, 37.996646787564124]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.82103111502252, 37.99664678756413],
+      "geometryKey": 128,
+      "centroid": [40.82103111502252, 37.99664678756413],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.82103111502252, 37.99664678756413, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇERMİK",
+        "İdari Mahalle Adı": "KUYU",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Kuyu Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 121,
+        "Objectid": "121",
+        "SYS::GeometryKey": 121,
+        "SYS::InterriorPoint": [39.348312476835936, 38.158288830018776],
+        "SYS::Centroid": [39.348312476835936, 38.158288830018776],
+        "SYS::Envelope": [
+          [39.34831247683593, 38.15828883001877],
+          [39.34831247683594, 38.15828883001877],
+          [39.34831247683594, 38.15828883001878],
+          [39.34831247683593, 38.15828883001878],
+          [39.34831247683593, 38.15828883001877]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.348312476835936, 38.158288830018776],
+      "geometryKey": 121,
+      "centroid": [39.348312476835936, 38.158288830018776],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.348312476835936, 38.158288830018776, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇERMİK",
+        "İdari Mahalle Adı": "GÜRÜZ",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Gürüz Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 115,
+        "Objectid": "115",
+        "SYS::GeometryKey": 115,
+        "SYS::InterriorPoint": [39.37261738150432, 37.990633004464456],
+        "SYS::Centroid": [39.37261738150432, 37.990633004464456],
+        "SYS::Envelope": [
+          [39.37261738150431, 37.99063300446445],
+          [39.37261738150433, 37.99063300446445],
+          [39.37261738150433, 37.99063300446446],
+          [39.37261738150431, 37.99063300446446],
+          [39.37261738150431, 37.99063300446445]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.37261738150432, 37.990633004464456],
+      "geometryKey": 115,
+      "centroid": [39.37261738150432, 37.990633004464456],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.37261738150432, 37.990633004464456, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇERMİK",
+        "İdari Mahalle Adı": "SARIBALTA",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Sarıbalta Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 126,
+        "Objectid": "126",
+        "SYS::GeometryKey": 126,
+        "SYS::InterriorPoint": [39.45688002161607, 37.929521557888116],
+        "SYS::Centroid": [39.45688002161607, 37.929521557888116],
+        "SYS::Envelope": [
+          [39.456880021616065, 37.92952155788811],
+          [39.45688002161608, 37.92952155788811],
+          [39.45688002161608, 37.92952155788812],
+          [39.456880021616065, 37.92952155788812],
+          [39.456880021616065, 37.92952155788811]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.45688002161607, 37.929521557888116],
+      "geometryKey": 126,
+      "centroid": [39.45688002161607, 37.929521557888116],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.45688002161607, 37.929521557888116, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "TEKKAYNAK",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Tekkaynak Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 127,
+        "Objectid": "127",
+        "SYS::GeometryKey": 127,
+        "SYS::InterriorPoint": [40.431592361779614, 37.7930061846729],
+        "SYS::Centroid": [40.431592361779614, 37.7930061846729],
+        "SYS::Envelope": [
+          [40.43159236177961, 37.79300618467289],
+          [40.43159236177962, 37.79300618467289],
+          [40.43159236177962, 37.793006184672905],
+          [40.43159236177961, 37.793006184672905],
+          [40.43159236177961, 37.79300618467289]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.431592361779614, 37.7930061846729],
+      "geometryKey": 127,
+      "centroid": [40.431592361779614, 37.7930061846729],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.431592361779614, 37.7930061846729, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "ORTAŞAR",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Ortaşar Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 123,
+        "Objectid": "123",
+        "SYS::GeometryKey": 123,
+        "SYS::InterriorPoint": [40.30766284278625, 37.75491287017533],
+        "SYS::Centroid": [40.30766284278625, 37.75491287017533],
+        "SYS::Envelope": [
+          [40.30766284278624, 37.754912870175325],
+          [40.30766284278626, 37.754912870175325],
+          [40.30766284278626, 37.75491287017534],
+          [40.30766284278624, 37.75491287017534],
+          [40.30766284278624, 37.754912870175325]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.30766284278625, 37.75491287017533],
+      "geometryKey": 123,
+      "centroid": [40.30766284278625, 37.75491287017533],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.30766284278625, 37.75491287017533, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "BULUTÇEKER",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Karaçbelik Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 118,
+        "Objectid": "118",
+        "SYS::GeometryKey": 118,
+        "SYS::InterriorPoint": [40.16187244450786, 37.62648854554031],
+        "SYS::Centroid": [40.16187244450786, 37.62648854554031],
+        "SYS::Envelope": [
+          [40.16187244450785, 37.626488545540305],
+          [40.161872444507864, 37.626488545540305],
+          [40.161872444507864, 37.62648854554032],
+          [40.16187244450785, 37.62648854554032],
+          [40.16187244450785, 37.626488545540305]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.16187244450786, 37.62648854554031],
+      "geometryKey": 118,
+      "centroid": [40.16187244450786, 37.62648854554031],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.16187244450786, 37.62648854554031, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "BAYIRKONAĞI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Bayırkonağı Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 110,
+        "Objectid": "110",
+        "SYS::GeometryKey": 110,
+        "SYS::InterriorPoint": [40.112984655229724, 37.57671416752515],
+        "SYS::Centroid": [40.112984655229724, 37.57671416752515],
+        "SYS::Envelope": [
+          [40.11298465522972, 37.57671416752514],
+          [40.11298465522973, 37.57671416752514],
+          [40.11298465522973, 37.576714167525154],
+          [40.11298465522972, 37.576714167525154],
+          [40.11298465522972, 37.57671416752514]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.112984655229724, 37.57671416752515],
+      "geometryKey": 110,
+      "centroid": [40.112984655229724, 37.57671416752515],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.112984655229724, 37.57671416752515, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "KARASUNGUR",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Karasungur Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 119,
+        "Objectid": "119",
+        "SYS::GeometryKey": 119,
+        "SYS::InterriorPoint": [39.97241035332633, 37.580735290494864],
+        "SYS::Centroid": [39.97241035332633, 37.580735290494864],
+        "SYS::Envelope": [
+          [39.972410353326325, 37.58073529049486],
+          [39.97241035332634, 37.58073529049486],
+          [39.97241035332634, 37.58073529049487],
+          [39.972410353326325, 37.58073529049487],
+          [39.972410353326325, 37.58073529049486]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.97241035332633, 37.580735290494864],
+      "geometryKey": 119,
+      "centroid": [39.97241035332633, 37.580735290494864],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.97241035332633, 37.580735290494864, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ERGANİ",
+        "İdari Mahalle Adı": "ALİTAŞI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "ALİTAŞ Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 109,
+        "Objectid": "109",
+        "SYS::GeometryKey": 109,
+        "SYS::InterriorPoint": [39.63775186039708, 37.84359252148972],
+        "SYS::Centroid": [39.63775186039708, 37.84359252148972],
+        "SYS::Envelope": [
+          [39.637751860397074, 37.84359252148971],
+          [39.63775186039709, 37.84359252148971],
+          [39.63775186039709, 37.843592521489725],
+          [39.637751860397074, 37.843592521489725],
+          [39.637751860397074, 37.84359252148971]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.63775186039708, 37.84359252148972],
+      "geometryKey": 109,
+      "centroid": [39.63775186039708, 37.84359252148972],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.63775186039708, 37.84359252148972, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ERGANİ",
+        "İdari Mahalle Adı": "GİRAYLAR",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Giraylar Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 114,
+        "Objectid": "114",
+        "SYS::GeometryKey": 114,
+        "SYS::InterriorPoint": [39.594589908493056, 37.893783569719076],
+        "SYS::Centroid": [39.594589908493056, 37.893783569719076],
+        "SYS::Envelope": [
+          [39.59458990849305, 37.89378356971907],
+          [39.59458990849306, 37.89378356971907],
+          [39.59458990849306, 37.89378356971908],
+          [39.59458990849305, 37.89378356971908],
+          [39.59458990849305, 37.89378356971907]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.594589908493056, 37.893783569719076],
+      "geometryKey": 114,
+      "centroid": [39.594589908493056, 37.893783569719076],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.594589908493056, 37.893783569719076, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ERGANİ",
+        "İdari Mahalle Adı": "İNCEHIDIR",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Mıstıbage Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 122,
+        "Objectid": "122",
+        "SYS::GeometryKey": 122,
+        "SYS::InterriorPoint": [39.60496326566863, 37.982345654290356],
+        "SYS::Centroid": [39.60496326566863, 37.982345654290356],
+        "SYS::Envelope": [
+          [39.60496326566862, 37.98234565429035],
+          [39.60496326566864, 37.98234565429035],
+          [39.60496326566864, 37.98234565429036],
+          [39.60496326566862, 37.98234565429036],
+          [39.60496326566862, 37.98234565429035]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.60496326566863, 37.982345654290356],
+      "geometryKey": 122,
+      "centroid": [39.60496326566863, 37.982345654290356],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.60496326566863, 37.982345654290356, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ERGANİ",
+        "İdari Mahalle Adı": "KAVAKLI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Kavaklı Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 120,
+        "Objectid": "120",
+        "SYS::GeometryKey": 120,
+        "SYS::InterriorPoint": [39.65522482824508, 37.88771470142324],
+        "SYS::Centroid": [39.65522482824508, 37.88771470142324],
+        "SYS::Envelope": [
+          [39.655224828245075, 37.887714701423235],
+          [39.65522482824509, 37.887714701423235],
+          [39.65522482824509, 37.88771470142325],
+          [39.655224828245075, 37.88771470142325],
+          [39.655224828245075, 37.887714701423235]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.65522482824508, 37.88771470142324],
+      "geometryKey": 120,
+      "centroid": [39.65522482824508, 37.88771470142324],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.65522482824508, 37.88771470142324, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ERGANİ",
+        "İdari Mahalle Adı": "AKÇOBAN",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "",
+        "Proje Adı": "Hayvan İçme Suyu Projesi",
+        "Poly": 108,
+        "Objectid": "108",
+        "SYS::GeometryKey": 108,
+        "SYS::InterriorPoint": [39.72427250708362, 37.92654456563676],
+        "SYS::Centroid": [39.72427250708362, 37.92654456563676],
+        "SYS::Envelope": [
+          [39.72427250708361, 37.92654456563675],
+          [39.724272507083626, 37.92654456563675],
+          [39.724272507083626, 37.92654456563677],
+          [39.72427250708361, 37.92654456563677],
+          [39.72427250708361, 37.92654456563675]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.72427250708362, 37.92654456563676],
+      "geometryKey": 108,
+      "centroid": [39.72427250708362, 37.92654456563676],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.72427250708362, 37.92654456563676, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "YENİÖZERLİ",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Yeniözerli Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 129,
+        "Objectid": "129",
+        "SYS::GeometryKey": 129,
+        "SYS::InterriorPoint": [39.879761577004714, 37.97951074555111],
+        "SYS::Centroid": [39.879761577004714, 37.97951074555111],
+        "SYS::Envelope": [
+          [39.87976157700471, 37.9795107455511],
+          [39.87976157700472, 37.9795107455511],
+          [39.87976157700472, 37.97951074555112],
+          [39.87976157700471, 37.97951074555112],
+          [39.87976157700471, 37.9795107455511]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.879761577004714, 37.97951074555111],
+      "geometryKey": 129,
+      "centroid": [39.879761577004714, 37.97951074555111],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.879761577004714, 37.97951074555111, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "HARMANARDI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Harmanardı Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 116,
+        "Objectid": "116",
+        "SYS::GeometryKey": 116,
+        "SYS::InterriorPoint": [39.86965579733725, 37.932409532793514],
+        "SYS::Centroid": [39.86965579733725, 37.932409532793514],
+        "SYS::Envelope": [
+          [39.869655797337245, 37.93240953279351],
+          [39.86965579733726, 37.93240953279351],
+          [39.86965579733726, 37.93240953279352],
+          [39.869655797337245, 37.93240953279352],
+          [39.869655797337245, 37.93240953279351]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.86965579733725, 37.932409532793514],
+      "geometryKey": 116,
+      "centroid": [39.86965579733725, 37.932409532793514],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.86965579733725, 37.932409532793514, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "SAĞKULAK",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Sağkulak Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 125,
+        "Objectid": "125",
+        "SYS::GeometryKey": 125,
+        "SYS::InterriorPoint": [39.91571123222047, 37.993670831063994],
+        "SYS::Centroid": [39.91571123222047, 37.993670831063994],
+        "SYS::Envelope": [
+          [39.91571123222046, 37.99367083106399],
+          [39.915711232220474, 37.99367083106399],
+          [39.915711232220474, 37.993670831064],
+          [39.91571123222046, 37.993670831064],
+          [39.91571123222046, 37.99367083106399]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [39.91571123222047, 37.993670831063994],
+      "geometryKey": 125,
+      "centroid": [39.91571123222047, 37.993670831063994],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.91571123222047, 37.993670831063994, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "LİCE",
+        "İdari Mahalle Adı": "DURU",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Ulaşım",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Lice Ashab-ı Keyf Mağarası Erişim Yolu Çevre Düzenleme Projesi Hizmet Alım İşi",
+        "Poly": 86,
+        "Objectid": "86",
+        "SYS::GeometryKey": 86,
+        "SYS::InterriorPoint": [40.499702402883955, 38.43280079320043],
+        "SYS::Centroid": [40.499702402883955, 38.43280079320043],
+        "SYS::Envelope": [
+          [40.49970240288395, 38.43280079320042],
+          [40.49970240288396, 38.43280079320042],
+          [40.49970240288396, 38.432800793200435],
+          [40.49970240288395, 38.432800793200435],
+          [40.49970240288395, 38.43280079320042]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.499702402883955, 38.43280079320043],
+      "geometryKey": 86,
+      "centroid": [40.499702402883955, 38.43280079320043],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.499702402883955, 38.43280079320043, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SİLVAN",
+        "İdari Mahalle Adı": "ÇOBANTEPE",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Çobantepe Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 112,
+        "Objectid": "112",
+        "SYS::GeometryKey": 112,
+        "SYS::InterriorPoint": [40.76478755119219, 38.02293473066704],
+        "SYS::Centroid": [40.76478755119219, 38.02293473066704],
+        "SYS::Envelope": [
+          [40.764787551192185, 38.02293473066703],
+          [40.7647875511922, 38.02293473066703],
+          [40.7647875511922, 38.022934730667046],
+          [40.764787551192185, 38.022934730667046],
+          [40.764787551192185, 38.02293473066703]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.76478755119219, 38.02293473066704],
+      "geometryKey": 112,
+      "centroid": [40.76478755119219, 38.02293473066704],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.76478755119219, 38.02293473066704, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "BÜYÜKKADI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Büyükkadı Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 111,
+        "Objectid": "111",
+        "SYS::GeometryKey": 111,
+        "SYS::InterriorPoint": [40.29517968161069, 38.01458782559079],
+        "SYS::Centroid": [40.29517968161069, 38.01458782559079],
+        "SYS::Envelope": [
+          [40.29517968161068, 38.01458782559078],
+          [40.2951796816107, 38.01458782559078],
+          [40.2951796816107, 38.014587825590795],
+          [40.29517968161068, 38.014587825590795],
+          [40.29517968161068, 38.01458782559078]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.29517968161069, 38.01458782559079],
+      "geometryKey": 111,
+      "centroid": [40.29517968161069, 38.01458782559079],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.29517968161069, 38.01458782559079, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "KARAÇALI",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Karaçalı Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 117,
+        "Objectid": "117",
+        "SYS::GeometryKey": 117,
+        "SYS::InterriorPoint": [40.31927275080422, 37.95742711288173],
+        "SYS::Centroid": [40.31927275080422, 37.95742711288173],
+        "SYS::Envelope": [
+          [40.31927275080421, 37.957427112881724],
+          [40.319272750804224, 37.957427112881724],
+          [40.319272750804224, 37.95742711288174],
+          [40.31927275080421, 37.95742711288174],
+          [40.31927275080421, 37.957427112881724]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.31927275080422, 37.95742711288173],
+      "geometryKey": 117,
+      "centroid": [40.31927275080422, 37.95742711288173],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.31927275080422, 37.95742711288173, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "PINARDÜZÜ",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Pınardüzü Mahallesi Hayvan İçme Suyu Projesi",
+        "Poly": 124,
+        "Objectid": "124",
+        "SYS::GeometryKey": 124,
+        "SYS::InterriorPoint": [40.38287294034698, 37.948730520521316],
+        "SYS::Centroid": [40.38287294034698, 37.948730520521316],
+        "SYS::Envelope": [
+          [40.38287294034697, 37.94873052052131],
+          [40.382872940346985, 37.94873052052131],
+          [40.382872940346985, 37.94873052052132],
+          [40.38287294034697, 37.94873052052132],
+          [40.38287294034697, 37.94873052052131]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.38287294034698, 37.948730520521316],
+      "geometryKey": 124,
+      "centroid": [40.38287294034698, 37.948730520521316],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.38287294034698, 37.948730520521316, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "ŞEHİTLİK",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Etüt Proje",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "Eski Mardin Yolu Yapılması İşi",
+        "Poly": 67,
+        "Objectid": "67",
+        "SYS::GeometryKey": 67,
+        "SYS::InterriorPoint": [40.227148865332516, 37.872329876185596],
+        "SYS::Centroid": [40.227148865332516, 37.872329876185596],
+        "SYS::Envelope": [
+          [40.22714886533251, 37.87232987618559],
+          [40.22714886533252, 37.87232987618559],
+          [40.22714886533252, 37.8723298761856],
+          [40.22714886533251, 37.8723298761856],
+          [40.22714886533251, 37.87232987618559]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.227148865332516, 37.872329876185596],
+      "geometryKey": 67,
+      "centroid": [40.227148865332516, 37.872329876185596],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.227148865332516, 37.872329876185596, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "ŞEHİTLİK",
+        "Proje Üst Türü": "ETÜT HİZMETLERİ",
+        "Proje Türü": "Kentsel Dönüşüm",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Ben û sen Mahallesi Kamulaştırma",
+        "Poly": 103,
+        "Objectid": "103",
+        "SYS::GeometryKey": 103,
+        "SYS::InterriorPoint": [40.2300488458757, 37.904311572101655],
+        "SYS::Centroid": [40.2300488458757, 37.904311572101655],
+        "SYS::Envelope": [
+          [40.23004884587569, 37.90431157210165],
+          [40.23004884587571, 37.90431157210165],
+          [40.23004884587571, 37.90431157210166],
+          [40.23004884587569, 37.90431157210166],
+          [40.23004884587569, 37.90431157210165]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.2300488458757, 37.904311572101655],
+      "geometryKey": 103,
+      "centroid": [40.2300488458757, 37.904311572101655],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.2300488458757, 37.904311572101655, 0]
+      }
+    }
+  ],
+  "bbox": [
+    39.348312476835936, 37.57671416752515, 40.82103111502252, 38.43280079320043
+  ]
+}

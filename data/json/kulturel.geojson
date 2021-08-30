@@ -1,0 +1,232 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "ÇINAR",
+        "İdari Mahalle Adı": "ALTINAKAR",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Güzel Şeyh Kasrı Rölöve, Restitüsyon, Restorasyon, Statik, Elektrik ve Mekanik Projelerinin Yapılması İşi",
+        "Poly": 82,
+        "Objectid": "82",
+        "SYS::GeometryKey": 82,
+        "SYS::InterriorPoint": [40.41386408532296, 37.7666400653513],
+        "SYS::Centroid": [40.41386408532296, 37.7666400653513],
+        "SYS::Envelope": [
+          [40.413864085322956, 37.76664006535129],
+          [40.41386408532297, 37.76664006535129],
+          [40.41386408532297, 37.766640065351304],
+          [40.413864085322956, 37.766640065351304],
+          [40.413864085322956, 37.76664006535129]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.41386408532296, 37.7666400653513],
+      "geometryKey": 82,
+      "centroid": [40.41386408532296, 37.7666400653513],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.41386408532296, 37.7666400653513, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "LALEBEY",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "Suriçi Tarihi Sokakların Turizme Kazandırılması Projesi",
+        "Poly": 90,
+        "Objectid": "90",
+        "SYS::GeometryKey": 90,
+        "SYS::InterriorPoint": [40.23132512979647, 37.910071528466126],
+        "SYS::Centroid": [40.23132512979647, 37.910071528466126],
+        "SYS::Envelope": [
+          [40.23132512979646, 37.91007152846612],
+          [40.231325129796474, 37.91007152846612],
+          [40.231325129796474, 37.91007152846613],
+          [40.23132512979646, 37.91007152846613],
+          [40.23132512979646, 37.91007152846612]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.23132512979647, 37.910071528466126],
+      "geometryKey": 90,
+      "centroid": [40.23132512979647, 37.910071528466126],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.23132512979647, 37.910071528466126, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "ALİ PAŞA",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Tamamlanan",
+        "Proje Adı": "Cemil Paşa Konağı Kent Müzesi Basit Onarım İşi",
+        "Poly": 79,
+        "Objectid": "79",
+        "SYS::GeometryKey": 79,
+        "SYS::InterriorPoint": [40.233557711535255, 37.90843111843661],
+        "SYS::Centroid": [40.233557711535255, 37.90843111843661],
+        "SYS::Envelope": [
+          [40.23355771153525, 37.9084311184366],
+          [40.23355771153526, 37.9084311184366],
+          [40.23355771153526, 37.90843111843662],
+          [40.23355771153525, 37.90843111843662],
+          [40.23355771153525, 37.9084311184366]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.233557711535255, 37.90843111843661],
+      "geometryKey": 79,
+      "centroid": [40.233557711535255, 37.90843111843661],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.233557711535255, 37.90843111843661, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "CEVAT PAŞA",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Diyarbakır İçkale Saint George Kilisesi Basit Onarım İş",
+        "Poly": 80,
+        "Objectid": "80",
+        "SYS::GeometryKey": 80,
+        "SYS::InterriorPoint": [40.242441032223, 37.91607171323643],
+        "SYS::Centroid": [40.242441032223, 37.91607171323643],
+        "SYS::Envelope": [
+          [40.24244103222299, 37.91607171323642],
+          [40.242441032223006, 37.91607171323642],
+          [40.242441032223006, 37.916071713236434],
+          [40.24244103222299, 37.916071713236434],
+          [40.24244103222299, 37.91607171323642]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.242441032223, 37.91607171323643],
+      "geometryKey": 80,
+      "centroid": [40.242441032223, 37.91607171323643],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.242441032223, 37.91607171323643, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "CEVAT PAŞA",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "İçkale Surları Restorasyonu 2. Etap İşi",
+        "Poly": 89,
+        "Objectid": "89",
+        "SYS::GeometryKey": 89,
+        "SYS::InterriorPoint": [40.242118123417974, 37.914012616376795],
+        "SYS::Centroid": [40.242118123417974, 37.914012616376795],
+        "SYS::Envelope": [
+          [40.24211812341797, 37.91401261637679],
+          [40.24211812341798, 37.91401261637679],
+          [40.24211812341798, 37.9140126163768],
+          [40.24211812341797, 37.9140126163768],
+          [40.24211812341797, 37.91401261637679]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.242118123417974, 37.914012616376795],
+      "geometryKey": 89,
+      "centroid": [40.242118123417974, 37.914012616376795],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.242118123417974, 37.914012616376795, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "DİCLE",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Fiskaya Tarihi Değirmen Rölöve, Restitüsyon, Restorasyon, Statik, Elektrik ve Mekanik Projelerinin Yapılması İşi",
+        "Poly": 81,
+        "Objectid": "81",
+        "SYS::GeometryKey": 81,
+        "SYS::InterriorPoint": [40.24260082850995, 37.91722175361988],
+        "SYS::Centroid": [40.24260082850995, 37.91722175361988],
+        "SYS::Envelope": [
+          [40.24260082850994, 37.91722175361987],
+          [40.24260082850996, 37.91722175361987],
+          [40.24260082850996, 37.917221753619884],
+          [40.24260082850994, 37.917221753619884],
+          [40.24260082850994, 37.91722175361987]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.24260082850995, 37.91722175361988],
+      "geometryKey": 81,
+      "centroid": [40.24260082850995, 37.91722175361988],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.24260082850995, 37.91722175361988, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "YENİŞEHİR",
+        "Proje Üst Türü": "KÜLTÜR HİZMETLERİ",
+        "Proje Türü": "Kültürel",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "Diyarbakır Surları 21-22 Nolu Burçlar Acil Müdahale Ve 32-33, 41-42 Nolu Burçlar Restorasyon İşi ",
+        "Poly": 91,
+        "Objectid": "91",
+        "SYS::GeometryKey": 91,
+        "SYS::InterriorPoint": [40.231629947812564, 37.9149289222178],
+        "SYS::Centroid": [40.231629947812564, 37.9149289222178],
+        "SYS::Envelope": [
+          [40.23162994781256, 37.91492892221779],
+          [40.23162994781257, 37.91492892221779],
+          [40.23162994781257, 37.914928922217804],
+          [40.23162994781256, 37.914928922217804],
+          [40.23162994781256, 37.91492892221779]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.231629947812564, 37.9149289222178],
+      "geometryKey": 91,
+      "centroid": [40.231629947812564, 37.9149289222178],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.231629947812564, 37.9149289222178, 0]
+      }
+    }
+  ],
+  "bbox": [
+    40.23132512979647, 37.7666400653513, 40.41386408532296, 37.91722175361988
+  ]
+}

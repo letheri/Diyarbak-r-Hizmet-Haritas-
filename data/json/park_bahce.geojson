@@ -1,0 +1,264 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "BAĞLAR",
+        "İdari Mahalle Adı": "BAĞCILAR",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Devam Eden",
+        "Proje Adı": "HAVAALANI YONCALI KAVŞAK PROJESİ",
+        "Poly": 70,
+        "Objectid": "70",
+        "SYS::GeometryKey": 70,
+        "SYS::InterriorPoint": [40.17484598653197, 37.89749664341438],
+        "SYS::Centroid": [40.17484598653197, 37.89749664341438],
+        "SYS::Envelope": [
+          [40.17484598653196, 37.89749664341437],
+          [40.17484598653198, 37.89749664341437],
+          [40.17484598653198, 37.897496643414385],
+          [40.17484598653196, 37.897496643414385],
+          [40.17484598653196, 37.89749664341437]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.17484598653197, 37.89749664341438],
+      "geometryKey": 70,
+      "centroid": [40.17484598653197, 37.89749664341438],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.17484598653197, 37.89749664341438, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "CÜCÜK",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "DEVEGEÇİDİ PİKNİK ALANI REHABİLİTASYON PROJESİ",
+        "Poly": 78,
+        "Objectid": "78",
+        "SYS::GeometryKey": 78,
+        "SYS::InterriorPoint": [40.06391389688353, 37.974993076646065],
+        "SYS::Centroid": [40.06391389688353, 37.974993076646065],
+        "SYS::Envelope": [
+          [40.06391389688352, 37.97499307664606],
+          [40.063913896883534, 37.97499307664606],
+          [40.063913896883534, 37.97499307664607],
+          [40.06391389688352, 37.97499307664607],
+          [40.06391389688352, 37.97499307664606]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.06391389688353, 37.974993076646065],
+      "geometryKey": 78,
+      "centroid": [40.06391389688353, 37.974993076646065],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.06391389688353, 37.974993076646065, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "KAYAPINAR",
+        "İdari Mahalle Adı": "BARIŞ",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Başlandı",
+        "Proje Adı": "500 EVLER PARK YAPIM İŞİ",
+        "Poly": 75,
+        "Objectid": "75",
+        "SYS::GeometryKey": 75,
+        "SYS::InterriorPoint": [40.11165927761301, 37.91446958318823],
+        "SYS::Centroid": [40.11165927761301, 37.91446958318823],
+        "SYS::Envelope": [
+          [40.111659277613, 37.91446958318822],
+          [40.111659277613015, 37.91446958318822],
+          [40.111659277613015, 37.914469583188236],
+          [40.111659277613, 37.914469583188236],
+          [40.111659277613, 37.91446958318822]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.11165927761301, 37.91446958318823],
+      "geometryKey": 75,
+      "centroid": [40.11165927761301, 37.91446958318823],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.11165927761301, 37.91446958318823, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "FATİHPAŞA",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "",
+        "Proje Adı": "KEÇİBURCU ÇEVRE DÜZENLEME İŞİ",
+        "Poly": 76,
+        "Objectid": "76",
+        "SYS::GeometryKey": 76,
+        "SYS::InterriorPoint": [40.23683849674555, 37.90547393884122],
+        "SYS::Centroid": [40.23683849674555, 37.90547393884122],
+        "SYS::Envelope": [
+          [40.23683849674554, 37.90547393884121],
+          [40.236838496745555, 37.90547393884121],
+          [40.236838496745555, 37.905473938841226],
+          [40.23683849674554, 37.905473938841226],
+          [40.23683849674554, 37.90547393884121]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.23683849674555, 37.90547393884122],
+      "geometryKey": 76,
+      "centroid": [40.23683849674555, 37.90547393884122],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.23683849674555, 37.90547393884122, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "SUR",
+        "İdari Mahalle Adı": "CEVAT PAŞA",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "FİSKAYA CAM SEYİR TERASI PROJESİ",
+        "Poly": 74,
+        "Objectid": "74",
+        "SYS::GeometryKey": 74,
+        "SYS::InterriorPoint": [40.24227463073926, 37.91696428871407],
+        "SYS::Centroid": [40.24227463073926, 37.91696428871407],
+        "SYS::Envelope": [
+          [40.24227463073925, 37.91696428871406],
+          [40.24227463073927, 37.91696428871406],
+          [40.24227463073927, 37.91696428871408],
+          [40.24227463073925, 37.91696428871408],
+          [40.24227463073925, 37.91696428871406]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.24227463073926, 37.91696428871407],
+      "geometryKey": 74,
+      "centroid": [40.24227463073926, 37.91696428871407],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.24227463073926, 37.91696428871407, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "ÜÇKUYU",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "TÜYAP PARK YAPIM İŞİ",
+        "Poly": 71,
+        "Objectid": "71",
+        "SYS::GeometryKey": 71,
+        "SYS::InterriorPoint": [40.151414946425525, 37.98191307472284],
+        "SYS::Centroid": [40.151414946425525, 37.98191307472284],
+        "SYS::Envelope": [
+          [40.15141494642552, 37.98191307472283],
+          [40.15141494642553, 37.98191307472283],
+          [40.15141494642553, 37.98191307472285],
+          [40.15141494642552, 37.98191307472285],
+          [40.15141494642552, 37.98191307472283]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.151414946425525, 37.98191307472284],
+      "geometryKey": 71,
+      "centroid": [40.151414946425525, 37.98191307472284],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.151414946425525, 37.98191307472284, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "ŞEHİTLİK",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "SÜMERPARK ÇEVRE DÜZENLEME PROJESİ",
+        "Poly": 73,
+        "Objectid": "73",
+        "SYS::GeometryKey": 73,
+        "SYS::InterriorPoint": [40.21969283572486, 37.9120246184952],
+        "SYS::Centroid": [40.21969283572486, 37.9120246184952],
+        "SYS::Envelope": [
+          [40.21969283572485, 37.912024618495195],
+          [40.219692835724864, 37.912024618495195],
+          [40.219692835724864, 37.91202461849521],
+          [40.21969283572485, 37.91202461849521],
+          [40.21969283572485, 37.912024618495195]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.21969283572486, 37.9120246184952],
+      "geometryKey": 73,
+      "centroid": [40.21969283572486, 37.9120246184952],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.21969283572486, 37.9120246184952, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "İlçe Adı": "YENİŞEHİR",
+        "İdari Mahalle Adı": "DİCLE",
+        "Proje Üst Türü": "PARK HİZMETLERİ",
+        "Proje Türü": "Park ve Bahçeler",
+        "Proje Durumu[●●●]": "Planlanan",
+        "Proje Adı": "DİCLE VADİSİ DOĞA PARKI VE HEVSEL YÜRÜYÜŞ YOLLARI PROJESİ (1.ETAP)",
+        "Poly": 72,
+        "Objectid": "72",
+        "SYS::GeometryKey": 72,
+        "SYS::InterriorPoint": [40.243501214841025, 37.9255543960755],
+        "SYS::Centroid": [40.243501214841025, 37.9255543960755],
+        "SYS::Envelope": [
+          [40.24350121484102, 37.92555439607549],
+          [40.24350121484103, 37.92555439607549],
+          [40.24350121484103, 37.925554396075505],
+          [40.24350121484102, 37.925554396075505],
+          [40.24350121484102, 37.92555439607549]
+        ],
+        "SYS::InfoCard": null,
+        "SYS::InfoCardKey": null
+      },
+      "interiorPoint": [40.243501214841025, 37.9255543960755],
+      "geometryKey": 72,
+      "centroid": [40.243501214841025, 37.9255543960755],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.243501214841025, 37.9255543960755, 0]
+      }
+    }
+  ],
+  "bbox": [
+    40.06391389688353, 37.89749664341438, 40.243501214841025, 37.98191307472284
+  ]
+}
